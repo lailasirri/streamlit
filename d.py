@@ -100,7 +100,7 @@ elif option == 'Recomendation':
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
             picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
             # Hotels that the target user has rating
-            picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
+            picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={userId:'rating'})
   
             # Dictionary to save the unrating hoteland predicted rating pair
             rating_prediction ={}  
