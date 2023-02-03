@@ -64,6 +64,5 @@ elif option == 'Recomendation':
 
     namahotel = st.text_input('input namahotel')
 
-    # membuat tombol untuk prediksi
-    if st.button('Look For Hotel Recommendations'):
+ 
         
