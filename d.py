@@ -66,6 +66,8 @@ elif option == 'Recomendation':
 
     # membuat tombol untuk prediksi
     if st.button('Look For Hotel Recommendations'):
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
         # Keep the hotels with over 1 ratings
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
