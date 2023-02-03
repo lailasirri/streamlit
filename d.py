@@ -9,7 +9,7 @@ option = st.sidebar.selectbox(
 
 if option == 'Home' or option == '':
     st.write("""# SISTEM REKOMENDASI HOTEL
-    #### Sistem rekomendasi hotel merupakan sistem yang membantu memprediksi rating atau memberikan rekomendasi hotel berdasarkan data rating dan informasi hotel sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
+#### Sistem rekomendasi hotel merupakan sistem yang membantu memprediksi rating atau memberikan rekomendasi hotel berdasarkan data rating dan informasi hotel sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
 
