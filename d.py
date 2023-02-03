@@ -76,8 +76,6 @@ elif option == 'Recomendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
-
-
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
         # Pick a user ID
@@ -85,9 +83,9 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = namahotel
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={userId:'rating'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId':'rating'})
         # Similarity score hotels
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'Enter nama hotel':'similarity_score'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                                     right=picked_hotel_similarity_score, 
@@ -98,7 +96,6 @@ elif option == 'Recomendation':
                                     weights=picked_userid_rating_similarity['similarity_score']), 2)
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
         
-
         # Item-based recommendation function
         def item_based_rec(picked_userid=userId, number_of_similar_items=3, number_of_recommendations =10):
             import operator
