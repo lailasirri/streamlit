@@ -26,6 +26,7 @@ elif option == 'Matrix':
     hotels = pd.read_csv('hotel.csv', sep=';')
 
     # Keep the hotels with over 1 ratings
+    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
     agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
     agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
