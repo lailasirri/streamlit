@@ -22,7 +22,14 @@ elif option == 'Dataframe':
 elif option == 'User-Item Matrix':
     st.write("""## Matrix""") #menampilkan judul halaman Matrix
 
-    
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
 
-
+    # Keep the hotels with over 1 ratings
+    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
+    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
+    df_2 = pd.merge(df, agg_ratings_1[['namahotel']], on='namahotel', how='inner')
+    matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+    matrix #menampilkan matrix data
     
