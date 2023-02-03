@@ -77,50 +77,6 @@ elif option == 'Recomendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
-        userId = 'userId'
-        namahotel = 'namahotel'
-        picked_userid_rating = pd.DataFrame(matrix_norm[userId].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={1:'rating})
-        # Similarity score of the movie American Pie with all the other movies
-        picked_hotel_similarity_score = item_similarity[[userId]].reset_index().rename(columns={'namahotel':'similarity_score'})
-        picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
-                                            right=picked_hotel_similarity_score, 
-                                            on='namahotel', 
-                                            how='inner')\
-                                     .sort_values('similarity_score', ascending=False)[:10]
-        # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
-        predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                    weights=picked_userid_rating_similarity['similarity_score']), 2)
-        print(f'The predicted rating for {picked_hotel} by user {userId} is {predicted_rating}' )
-        # Item-based recommendation function
-    def item_based_rec(picked_userid=1, number_of_similar_items=3, number_of_recommendations =10):
-        import operator
-            # Hotels that the target user has not rating
-            picked_userid_unrating = pd.DataFrame(matrix_norm[userId].isna()).reset_index()
-            picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
-            # Hotels that the target user has rating
-            picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={1:'rating})
-  
-            # Dictionary to save the unrating hoteland predicted rating pair
-            rating_prediction ={}  
-            # Loop through unrating hotels          
-        for picked_hotel in picked_userid_unrating: 
-            # Calculate the similarity score of the picked hotel with other hotels
-            picked_hotel_similarity_score = item_similarity[[namahotel]].reset_index().rename(columns={namahotel:'similarity_score'})
-            # Rank the similarities between the picked user rating hotel and the picked unrating hotel.
-            picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
-                                                right=picked_hotel_similarity_score, 
-                                                on='namahotel', 
-                                                how='inner')\
-                                        .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
-            # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
-            predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                        weights=picked_userid_rating_similarity['similarity_score']), 3)
-            # Save the predicted rating in the dictionary
-            rating_prediction[picked_hotel] = predicted_rating
-            # Return the top recommended movies
-        return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
-            # Get recommendations
-        recommended_hotel = item_based_rec(userId, number_of_similar_items, number_of_recommendations =10)
-        recommended_hotel #menampilkan rekomendasi hotel
+      
 
     
