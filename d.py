@@ -63,7 +63,7 @@ elif option == 'Recomendation':
 
     UserId = st.text_input('input nomor userId')
 
-    Nama Hotel = st.text_input('input namahotel')
+    Nama Hotel = st.text_input('input Nama Hotel')
 
 
     
