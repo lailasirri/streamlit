@@ -79,7 +79,7 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = namahotel
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={userId:'rating'})
         # Similarity score of the movie American Pie with all the other movies
         picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
         n = 5
@@ -88,5 +88,7 @@ elif option == 'Recomendation':
                                                     on='namahotel', 
                                                     how='inner')\
                                              .sort_values('similarity_score', ascending=False)[:10]
-
+        predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
+                                    weights=picked_userid_rating_similarity['similarity_score']), 2)
+        print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
         
