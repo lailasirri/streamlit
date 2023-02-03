@@ -80,11 +80,11 @@ elif option == 'Recomendation':
         
         
         # Pick a user ID
-        picked_userid = userId
+        picked_userid = 'userId'
         # Pick a hotels
-        picked_hotel = namahotel
+        picked_hotel = 'namahotel'
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={picked_userid:'rating'})
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel:'similarity_score'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                             right=picked_hotel_similarity_score, 
@@ -96,7 +96,7 @@ elif option == 'Recomendation':
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
 
     # Item-based recommendation function
-def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_recommendations =10):
+def item_based_rec(picked_userid = 'userId', number_of_similar_items=1, number_of_recommendations =10):
   import operator
   # Hotels that the target user has not rating
   picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
@@ -124,7 +124,7 @@ def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_
     # Return the top recommended movies
   return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
 # Get recommendations
-recommended_hotel = item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_recommendations =10)
+recommended_hotel = item_based_rec(picked_userid = 'userId', number_of_similar_items=1, number_of_recommendations =10)
 recommended_hotel
 
 st.success(recommended_hotel)
