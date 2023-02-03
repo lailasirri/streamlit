@@ -93,10 +93,10 @@ elif option == 'Recomendation':
     def item_based_rec(userId, number_of_similar_items=3, number_of_recommendations =10):
         import operator
         # Hotels that the target user has not rating
-        picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
+        picked_userid_unrating = pd.DataFrame(matrix_norm[userId].isna()).reset_index()
         picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[userId].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
   
         # Dictionary to save the unrating hoteland predicted rating pair
         rating_prediction ={}  
@@ -118,7 +118,7 @@ elif option == 'Recomendation':
             # Return the top recommended movies
         return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
     # Get recommendations
-recommended_hotel = item_based_rec(userId, number_of_similar_items=3, number_of_recommendations =10)
+recommended_hotel = item_based_rec('userId', number_of_similar_items=3, number_of_recommendations =10)
 recommended_hotel
 
 st.success(recommended_hotel)
