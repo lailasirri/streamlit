@@ -100,7 +100,7 @@ def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_
   import operator
   # Hotels that the target user has not rating
   picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
-  picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
+  picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True][picked_hotel].values.tolist()
 # Hotels that the target user has rating
   picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={picked_userid:'rating'})
   
@@ -118,7 +118,7 @@ def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_
                                         .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
     # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
     predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                        weights=picked_userid_rating_similarity['similarity_score']), 3)
+                                        weights=picked_userid_rating_similarity['similarity_score']), 1)
 # Save the predicted rating in the dictionary
     rating_prediction[picked_hotel] = predicted_rating
     # Return the top recommended movies
