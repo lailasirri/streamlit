@@ -8,7 +8,7 @@ option = st.sidebar.selectbox(
 )
 
 if option == 'Home' or option == '':
-    st.write("""# Daptkan Hotel Terbaik Pilihan Anda!""") #menampilkan halaman utama
+    st.write("""# SISTEM REKOMENDASI HOTEL""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
 
@@ -52,7 +52,6 @@ elif option == 'Item-Similarity':
     item_similarity #menampilkan similarity
 
 
-
 elif option == 'Recomendation':
     st.write("""## """) #menampilkan judul halaman similarity
 
@@ -61,9 +60,9 @@ elif option == 'Recomendation':
 
     st.title('Dapatkan Hotel Pilihan Anda!')
 
-    userId = st.text_input('input nomor userId')
+    picked_userid = st.text_input('input nomor picked_userid')
 
-    namahotel = st.text_input('input namahotel')
+    picked_hotel = st.text_input('input picked_userid')
 
 
     
