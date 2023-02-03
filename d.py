@@ -9,10 +9,10 @@ option = st.sidebar.selectbox(
 
 if option == 'Home' or option == '':
     st.write("""# SISTEM REKOMENDASI HOTEL
-    Sistem rekomendasi hotel yaitu sistem yang membantu memprediksi rating atau
-    memberikan rekomendasi hotel berdasarkan data rating dan informasi hotel
-    sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity untuk
-    membandingkan rating hotel dan menemukan hotel yang paling mirip untuk 
+    Sistem rekomendasi merupakan sistem yang membantu memprediksi rating 
+    atau memberikan rekomendasi hotel berdasarkan data rating dan informasi 
+    hotel sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity 
+    untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk 
     memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
@@ -61,6 +61,9 @@ elif option == 'Recomendation':
     st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
 
     st.title('Dapatkan Hotel Pilihan Anda!')
+
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
 
     userId = st.number_input('Enter user ID',0)
 
