@@ -80,6 +80,7 @@ elif option == 'Recomendation':
         
         
         # Pick a user ID
+        userId = [1,2,3,4]
         picked_userid = 'userId'
         # Pick a hotels
         picked_hotel = 'namahotel'
