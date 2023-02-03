@@ -9,7 +9,10 @@ option = st.sidebar.selectbox(
 
 if option == 'Home' or option == '':
     st.write("""# SISTEM REKOMENDASI HOTEL
-#### Sistem rekomendasi hotel merupakan sistem yang membantu memprediksi rating atau memberikan rekomendasi hotel berdasarkan data rating dan informasi hotel sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk  memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
+### Sistem rekomendasi hotel merupakan sistem yang membantu memprediksi rating atau memberikan rekomendasi
+### hotel berdasarkan data rating dan informasi hotel sebelumnya dari pengguna. Sistem ini menggunakan
+### algoritma similarity untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk 
+### memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
 
@@ -56,7 +59,7 @@ elif option == 'Item-Similarity':
 elif option == 'Recomendation':
     st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
 
-    st.title('Dapatkan Hotel Pilihan Anda!')
+    st.title('Get Your Preferred Hotel !')
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
@@ -65,6 +68,8 @@ elif option == 'Recomendation':
 
     if st.button('View Recommendation Result'):
 
+        ratings=pd.read_csv('rating.csv', sep=';')
+        hotels = pd.read_csv('hotel.csv', sep=';')
         # Keep the hotels with over 1 ratings
         df = pd.merge(ratings, hotels, on='hotelId', how='inner')
         agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
