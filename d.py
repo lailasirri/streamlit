@@ -79,13 +79,13 @@ elif option == 'Recomendation':
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
         # Pick a user ID
-        picked_userid = userId
+        picked_userid = 3
         # Pick a hotels
-        picked_hotel = namahotel
+        picked_hotel = 'Pool Villa Club Senggigi Lombok'
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId':'rating'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'3':'rating'})
         # Similarity score hotels
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'Pool Villa Club Senggigi Lombok':'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                                     right=picked_hotel_similarity_score, 
@@ -97,11 +97,11 @@ elif option == 'Recomendation':
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
         
         # Item-based recommendation function
-        def item_based_rec(picked_userid=userId, number_of_similar_items=3, number_of_recommendations =10):
+        def item_based_rec(picked_userid=3, number_of_similar_items=3, number_of_recommendations =10):
             import operator
             # Hotels that the target user has not rating
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
-            picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
+            picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[3]==True]['namahotel'].values.tolist()
             # Hotels that the target user has rating
             picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={userId:'rating'})
   
@@ -125,7 +125,7 @@ elif option == 'Recomendation':
              # Return the top recommended movies
             return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
         # Get recommendations
-        recommended_hotel = item_based_rec(picked_userid=userId, number_of_similar_items=3, number_of_recommendations =10)
+        recommended_hotel = item_based_rec(picked_userid=3, number_of_similar_items=3, number_of_recommendations =10)
         recommended_hotel
 
         st.success(recommended_hotel)
