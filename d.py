@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
@@ -119,7 +120,7 @@ elif option == 'Recomendation':
                                                   .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
               # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
               predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                                  weights=picked_userid_rating_similarity['similarity_score']), 3)
+                                                  weights=picked_userid_rating_similarity['similarity_score']), 6)
              # Save the predicted rating in the dictionary
               rating_prediction[picked_hotel] = predicted_rating
              # Return the top recommended movies
