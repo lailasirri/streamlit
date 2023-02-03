@@ -116,7 +116,9 @@ elif option == 'Recomendation':
         # Save the predicted rating in the dictionary
         rating_prediction[picked_hotel] = predicted_rating
         # Return the top recommended movies
-    return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
+        return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
     # Get recommendations
     recommended_hotel = item_based_rec(userId, number_of_similar_items=3, number_of_recommendations =10)
     recommended_hotel
+
+    st.success(recommended_hotel)
