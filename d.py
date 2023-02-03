@@ -19,8 +19,8 @@ elif option == 'Dataframe':
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     df #menampilkan dataframe
 
-elif option == 'User-Item Matrix':
-    st.write("""## Matrix""") #menampilkan judul halaman Matrix
+elif option == 'Matrix':
+    st.write("""## User-Item Matrix""") #menampilkan judul halaman Matrix
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
