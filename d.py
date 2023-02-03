@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
@@ -8,29 +10,35 @@ option = st.sidebar.selectbox(
 )
 
 if option == 'Home' or option == '':
-    st.write("""# Halaman Utama""") #menampilkan halaman utama
+    st.write("""# Daptkan Hotel Terbaik Pilihan Anda!""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
 
     #membuat dataframe dengan pandas yang terdiri dari 2 kolom dan 4 baris data
-    df = pd.DataFrame({
-        'Column 1':[1,2,3,4],
-        'Column 2':[10,12,14,16]
-    })
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
+
+    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     df #menampilkan dataframe
+
+    # Aggregate by hotel
+    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+    
+    # Keep the hotels with over 1 ratings
+    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
+
+    # Check popular hotels
+    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
+
 elif option == 'Chart':
     st.write("""## Draw Charts""") #menampilkan judul halaman 
 
-    #membuat variabel chart data yang berisi data dari dataframe
-    #data berupa angka acak yang di-generate menggunakan numpy
-    #data terdiri dari 2 kolom dan 20 baris
-    chart_data = pd.DataFrame(
-        np.random.randn(20,2), 
-        columns=['a','b']
-    )
-    #menampilkan data dalam bentuk chart
-    st.line_chart(chart_data)
-    #data dalam bentuk tabel
-    chart_data
+    def jointplot_chart(agg_ratings_1):
+    sns.set(style="whitegrid")
+    plt.figure(figsize=(10,7))
+    sns.jointplot(x='mean_rating', y='number_of_ratings', data=agg_ratings_1)
+    plt.show()
+
+    st.pyplot(jointplot_chart(agg_ratings_1))
 
     
