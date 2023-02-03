@@ -96,7 +96,7 @@ elif option == 'Recomendation':
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
 
     # Item-based recommendation function
-def item_based_rec(picked_userid = userId, number_of_similar_items=3, number_of_recommendations =10):
+def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_recommendations =10):
   import operator
   # Hotels that the target user has not rating
   picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
