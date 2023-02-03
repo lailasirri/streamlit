@@ -21,24 +21,6 @@ elif option == 'Dataframe':
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     df #menampilkan dataframe
 
-    # Aggregate by hotel
-    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
     
-    # Keep the hotels with over 1 ratings
-    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
-
-    # Check popular hotels
-    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
-
-elif option == 'Chart':
-    st.write("""## Draw Charts""") #menampilkan judul halaman 
-
-    def jointplot_chart(agg_ratings_1):
-    sns.set(style="whitegrid")
-    plt.figure(figsize=(10,7))
-    sns.jointplot(x='mean_rating', y='number_of_ratings', data=agg_ratings_1)
-    plt.show()
-
-    st.pyplot(jointplot_chart(agg_ratings_1))
 
     
