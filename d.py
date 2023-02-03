@@ -84,7 +84,7 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = namahotel
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={picked_userid:'rating'})
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'picked_hotel:'similarity_score'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel:'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                             right=picked_hotel_similarity_score, 
