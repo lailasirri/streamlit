@@ -4,7 +4,7 @@ import numpy as np
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
-    ('Home','Dataframe','Chart')
+    ('Home','Dataframe','Matrix')
 )
 
 if option == 'Home' or option == '':
@@ -22,7 +22,7 @@ elif option == 'Dataframe':
 elif option == 'Matrix':
     st.write("""## Draw User-Item Matrix""") #menampilkan judul halaman 
 # Create user-item matrix
-matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+matrix = df.pivot_table(index='namahotel', columns='userId', values='rating')
 matrix
 
 
