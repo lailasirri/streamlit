@@ -54,7 +54,7 @@ elif option == 'Item-Similarity':
 
 
 elif option == 'Recomendation':
-    st.write("""## Recomendation""") #menampilkan judul halaman similarity
+    st.write("""## """) #menampilkan judul halaman similarity
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
