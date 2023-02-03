@@ -23,7 +23,8 @@ elif option == 'Matrix':
     st.write("""## Draw User-Item Matrix""") #menampilkan judul halaman 
 # Create user-item matrix
 matrix = df.pivot_table(index='namahotel', columns='userId', values='rating')
-matrix
+
+st.write(matrix)
 
 
     
