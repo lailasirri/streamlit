@@ -64,15 +64,11 @@ elif option == 'Recomendation':
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
-
     userId = st.number_input('Enter user ID',0)
-
     namahotel = st.text_input('Enter nama hotel')
 
     if st.button('View Recommendation Result'):
 
-        ratings=pd.read_csv('rating.csv', sep=';')
-        hotels = pd.read_csv('hotel.csv', sep=';')
         # Keep the hotels with over 1 ratings
         df = pd.merge(ratings, hotels, on='hotelId', how='inner')
         agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
@@ -82,6 +78,10 @@ elif option == 'Recomendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
+
+
+        ratings=pd.read_csv('rating.csv', sep=';')
+        hotels = pd.read_csv('hotel.csv', sep=';')
         # Pick a user ID
         picked_userid = userId
         # Pick a hotels
