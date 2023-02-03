@@ -77,6 +77,8 @@ elif option == 'Recomendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
+        userId = 'userId'
+        namahotel = 'namahotel'
         picked_userid_rating = pd.DataFrame(matrix_norm[userId].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={1:'rating})
         # Similarity score of the movie American Pie with all the other movies
         picked_hotel_similarity_score = item_similarity[[userId]].reset_index().rename(columns={'namahotel':'similarity_score'})
