@@ -48,6 +48,6 @@ elif option == 'Item-Similarity':
     df_2 = pd.merge(df, agg_ratings_1[['namahotel']], on='namahotel', how='inner')
     matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
     matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
-    tem_similarity = matrix_norm.T.corr()
+    item_similarity = matrix_norm.T.corr()
     item_similarity #menampilkan similarity
     
