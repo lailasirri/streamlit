@@ -116,4 +116,20 @@ elif option == 'Recomendation':
     recommended_hotel #menampilkan rekomendasi hotel
 
 
+
+
+
+elif option == 'Recomendation':
+    st.write("""## Recomendation""") #menampilkan judul halaman similarity
+
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
+
+    st.title('Dapatkan Hotel Pilihan Anda!')
+
+    UserId = st.text_input ('input nomor userId')
+
+    Nama Hotel = st.text_input ('input nama hotel')
+
+
     
