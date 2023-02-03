@@ -57,7 +57,7 @@ elif option == 'Recomendation':
 
     st.title('Dapatkan Hotel Pilihan Anda!')
 
-    userId = st.number_input('input userId', 0)
+    userId = st.number_input('input userId')
 
     namahotel = st.text_input('input namahotel')
 
