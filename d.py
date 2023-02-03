@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
@@ -21,20 +22,21 @@ elif option == 'Dataframe':
 
 elif option == 'Chart':
     st.write("""## Draw Charts""") #menampilkan judul halaman 
-    # Aggregate by hotel
-    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
-    
-    # Keep the hotels with over 1 ratings
-    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
 
-    # Check popular hotels
-    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
 
 st.write("Plot Hotel Ratings")
 
 st.write("Rata-rata rating dan jumlah rating hotel")
 
 # Plot
+# Aggregate by hotel
+agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+    
+# Keep the hotels with over 1 ratings
+agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
+
+# Check popular hotels
+agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
 plt.bar(agg_ratings_1['namahotel'], agg_ratings_1['mean_rating'])
 plt.xlabel("Hotel")
 plt.ylabel("Rata-rata Rating")
