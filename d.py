@@ -55,7 +55,14 @@ elif option == 'Item-Similarity':
 elif option == 'Recomendation':
     st.write("""## """) #menampilkan judul halaman similarity
 
-    ratings=pd.read_csv('rating.csv', sep=';')
+    st.title('Dapatkan Hotel Pilihan Anda!')
+
+    userId = st.text_input('input userId')
+
+    namahotel = st.text_input('input namahotel')
+
+    if st.button('Lihat Hasil Rekomendasi'):
+            ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
     # Keep the hotels with over 1 ratings
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
@@ -75,12 +82,5 @@ elif option == 'Recomendation':
     # Similarity score of the movie American Pie with all the other movies
     picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
 
-    st.title('Dapatkan Hotel Pilihan Anda!')
-
-    userId = st.text_input('input userId')
-
-    namahotel = st.text_input('input namahotel')
-
-    if st.button('Lihat Hasil Rekomendasi'):
 
         
