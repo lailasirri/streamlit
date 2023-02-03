@@ -53,15 +53,15 @@ elif option == 'Item-Similarity':
 
 
 elif option == 'Recomendation':
-    st.write("""## """) #menampilkan judul halaman similarity
+    st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
 
     st.title('Dapatkan Hotel Pilihan Anda!')
 
-    userId = st.number_input('input userId')
+    userId = st.number_input('Enter user ID',0)
 
-    namahotel = st.text_input('input namahotel')
+    namahotel = st.text_input('Enter nama hotel')
 
-    if st.button('Lihat Hasil Rekomendasi'):
+    if st.button('View Recommendation Result'):
 
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
