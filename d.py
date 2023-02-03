@@ -77,6 +77,6 @@ elif option == 'Recomendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
-      
-
+        
+        st.success(item_similarity)
     
