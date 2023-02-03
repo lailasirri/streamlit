@@ -83,8 +83,8 @@ elif option == 'Recomendation':
         picked_userid = userId
         # Pick a hotels
         picked_hotel = namahotel
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'ASTON Inn Mataram':'similarity_score'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={picked_userid:'rating'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'picked_hotel:'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                             right=picked_hotel_similarity_score, 
@@ -102,7 +102,7 @@ def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_
   picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
   picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[userId]==True]['namahotel'].values.tolist()
 # Hotels that the target user has rating
-  picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={1:'rating1', 2: 'rating2', 3: 'rating3', 4: 'rating4'})
+  picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                            .sort_values(ascending=False))                            .reset_index()                            .rename(columns={picked_userid:'rating'})
   
   # Dictionary to save the unrating hoteland predicted rating pair
   rating_prediction ={}  
@@ -117,7 +117,7 @@ def item_based_rec(picked_userid = userId, number_of_similar_items=1, number_of_
                                                 how='inner')\
                                         .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
     # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
-    predicted_rating = round(np.average(picked_userid_rating_similarity['rating1'], 
+    predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
                                         weights=picked_userid_rating_similarity['similarity_score']), 3)
 # Save the predicted rating in the dictionary
     rating_prediction[picked_hotel] = predicted_rating
