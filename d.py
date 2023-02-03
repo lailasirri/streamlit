@@ -79,7 +79,7 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = namahotel
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')                          .sort_values(ascending=False))                          .reset_index()                          .rename(columns={userId:'rating'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={userId:'rating'})
         # Similarity score of the movie American Pie with all the other movies
         picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
         n = 5
