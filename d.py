@@ -62,7 +62,7 @@ elif option == 'Recomendation':
     namahotel = st.text_input('input namahotel')
 
     if st.button('Lihat Hasil Rekomendasi'):
-            ratings=pd.read_csv('rating.csv', sep=';')
+    ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
     # Keep the hotels with over 1 ratings
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
