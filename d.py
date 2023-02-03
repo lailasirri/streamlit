@@ -19,12 +19,10 @@ elif option == 'Dataframe':
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     df #menampilkan dataframe
 
-elif option == 'Matrix':
-    st.write("""## Draw User-Item Matrix""") #menampilkan judul halaman 
-# Create user-item matrix
-matrix = df.pivot_table(index='namahotel', columns='userId', values='rating')
+elif option == 'User-Item Matrix':
+    st.write("""## Matrix""") #menampilkan judul halaman Matrix
 
-st.write(matrix)
+    
 
 
     
