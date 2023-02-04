@@ -116,21 +116,23 @@ elif option == 'Recomendation':
             # Dictionary to save the unrating hoteland predicted rating pair
             rating_prediction ={}  
             # Loop through unrating hotels          
-            for picked_hotel in picked_userid_unrating: 
-              # Calculate the similarity score of the picked hotel with other hotels
-              picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
-              # Rank the similarities between the picked user rating hotel and the picked unrating hotel.
-                          # Pick the top N similar items
-              picked_userid_rating_similarity = picked_userid_rating_similarity[:number_of_similar_items]
-
-                # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
-              predicted_rating = round(np.average(picked_userid_rating_similarity['rating1'], 
-                                                  weights=picked_userid_rating_similarity['similarity_score']), 2)
-              rating_prediction[picked_hotel]=predicted_rating
-
-                # Return the top N recommendation
-             return dict(sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations])
-    
-             result = item_based_rec()
-             st.write(f"The recommended hotel based on user {picked_userid} is :", result)
+            for picked_hotel in picked_userid_unrating:
+            # Calculate the similarity score of the picked hotel with other hotels
+                picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
+            # Rank the similarities between the picked user rating hotel and the picked unrating hotel.
+                picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
+                                                           right=picked_hotel_similarity_score, 
+                                                           on='namahotel', 
+                                                           how='inner')\
+                                                      .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
+            # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
+                predicted_rating = round(np.average(picked_userid_rating_similarity['rating1'], 
+                                                    weights=picked_userid_rating_similarity['similarity_score']), 3)
+            # Save the predicted rating in the dictionary
+                rating_prediction[picked_hotel] = predicted_rating
+            # Return the top recommended movies
+            return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
+           # Get recommendations
+        recommended_hotel = item_based_rec(picked_userid=1, number_of_similar_items=3, number_of_recommendations =10)
+        recommended_hotel
 
