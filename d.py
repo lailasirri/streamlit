@@ -64,7 +64,8 @@ elif option == 'Recomendation':
     namahotel = st.text_input('Enter nama hotel')
 
     if st.button('View Recommendation Result'):
-
+        userId = st.number_input('Enter user ID',1)
+        namahotel = st.text_input('Enter nama hotel'
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
         # Keep the hotels with over 1 ratings
@@ -81,7 +82,7 @@ elif option == 'Recomendation':
         # Pick a user ID
         picked_userid = userId
         # Pick a hotels
-        picked_hotel = 'ASTON Inn Mataram'
+        picked_hotel = namahotel
         # Hotels that the target user has rating
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')\
                                  .sort_values(ascending=False))\
