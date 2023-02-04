@@ -78,9 +78,9 @@ elif option == 'Recomendation':
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
         # Pick a user ID
-        picked_userid = userId
+        picked_userid = 1
         # Pick a hotels
-        picked_hotel = namahotel
+        picked_hotel = 'ASTON Inn Mataram'
         # Hotels that the target user has rating
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')\
                                  .sort_values(ascending=False))\
@@ -135,4 +135,6 @@ elif option == 'Recomendation':
            # Get recommendations
         recommended_hotel = item_based_rec(picked_userid=1, number_of_similar_items=3, number_of_recommendations =10)
         recommended_hotel
+        
+        st.success(recommended_hotel)
 
