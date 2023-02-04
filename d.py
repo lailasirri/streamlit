@@ -60,7 +60,7 @@ elif option == 'Recomendation':
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
-    userId = st.number_input('Enter user ID','userId')
+    userId = st.number_input('Enter user ID',1)
     namahotel = st.text_input('Enter nama hotel')
 
     if st.button('View Recommendation Result'):
