@@ -79,7 +79,7 @@ elif option == 'Recomendation':
         ratings=pd.read_csv('rating.csv', sep=';')
         hotels = pd.read_csv('hotel.csv', sep=';')
         # Pick a user ID
-        picked_userid = 1
+        picked_userid = userId
         # Pick a hotels
         picked_hotel = 'ASTON Inn Mataram'
         # Hotels that the target user has rating
