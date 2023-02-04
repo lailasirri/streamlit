@@ -8,8 +8,8 @@ option = st.sidebar.selectbox(
 )
 
 if option == 'Home' or option == '':
-    st.write("""# SISTEM REKOMENDASI HOTEL
-#### Sistem rekomendasi hotel merupakan sistem yang membantu memprediksi rating atau memberikan rekomendasi hotel berdasarkan data rating dan informasi hotel sebelumnya dari pengguna. Sistem ini menggunakan algoritma similarity untuk membandingkan rating hotel dan menemukan hotel yang paling mirip untuk memprediksi rating atau memberikan rekomendasi.""") #menampilkan halaman utama
+    st.write("""# Welcome to Lombok Island Hotel Recommendation System
+#### Sistem rekomendasi hotel pulau Lombok adalah sistem yang membantu pengguna menemukan hotel yang sesuai dengan kebutuhan dan preferensi mereka. Ini bisa dilakukan dengan menganalisis data seperti rating dan preferensi pengguna sebelumnya, lokasi, harga, dan fasilitas hotel. Ada beberapa metode rekomendasi yang dapat digunakan dalam sistem rekomendasi hotel, seperti metode item-based, metode user-based, atau metode kolaboratif filtering. Pada metode item-based, sistem akan menganalisis item (hotel) yang serupa dan memberikan rekomendasi hotel berdasarkan hotel yang paling serupa dengan hotel yang pernah diterima pengguna. Metode user-based menganalisis preferensi pengguna dan memberikan rekomendasi berdasarkan pengguna lain yang memiliki preferensi yang sama. Metode kolaboratif filtering menggabungkan beberapa metode lain dan memberikan rekomendasi berdasarkan analisis kolaboratif dari data pengguna dan item. Dengan demikian, sistem rekomendasi hotel pulau Lombok dapat membantu pengguna menemukan hotel yang sesuai dengan kebutuhan dan preferensi mereka, mempermudah proses pemesanan, dan membantu pengguna menemukan hotel terbaik untuk dikunjungi saat berlibur di pulau Lombok.""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
 
