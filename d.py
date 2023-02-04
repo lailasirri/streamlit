@@ -136,5 +136,5 @@ elif option == 'Recomendation':
         recommended_hotel = item_based_rec(picked_userid=1, number_of_similar_items=3, number_of_recommendations =10)
         recommended_hotel
         
-        st.success(recommended_hotel)
+        stc.html_(RESULT_TEMP.format(recommended_hotel),height=350)
 
