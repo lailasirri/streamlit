@@ -51,7 +51,7 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = 'namahotel'
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId':'rating'})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
         # Similarity score hotels
         picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
         n = 5
@@ -71,7 +71,7 @@ elif option == 'Recomendation':
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
             picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[picked_userid]==True]['namahotel'].values.tolist()
             # Hotels that the target user has rating
-            picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId':'rating'})
+            picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
   
             # Dictionary to save the unrating hoteland predicted rating pair
             rating_prediction ={}  
