@@ -28,6 +28,8 @@ elif option == 'Recomendation':
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
+    picked_userid = 'userId'
+    picked_hotel = 'namahotel'
     picked_userid = st.number_input('Enter user ID',0)
     picked_hotel = st.text_input('Enter nama hotel')
 
