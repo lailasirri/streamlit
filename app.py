@@ -50,7 +50,7 @@ elif option == 'Recommendation':
         userId = df['userId']
         namahotel = df['namahotel']
         # Pick a user ID
-        picked_userid = 2
+        picked_userid = 3
         # Pick a hotels
         picked_hotel = 'ASTON Inn Mataram'
         # Hotels that the target user has rating
