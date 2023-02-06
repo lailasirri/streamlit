@@ -4,7 +4,7 @@ import numpy as np
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
-    ('Home','Recomendation')
+    ('Home','Recommendation')
 )
 
 if option == 'Home' or option == '':
