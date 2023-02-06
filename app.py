@@ -28,6 +28,7 @@ elif option == 'Recommendation':
 
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
+    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     userId = df['userId']
     namahotel = df['namahotel']
     picked_userid = userId
