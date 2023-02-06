@@ -22,11 +22,8 @@ elif option == 'Dataframe':
 
 elif option == 'Hotels':
     st.write("""## List of Hotels in Lombok """) #menampilkan judul halaman similarity
-    ratings=pd.read_csv('rating.csv', sep=';')
-    hotels = pd.read_csv('hotel.csv', sep=';')
-    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
-    Hotels = df['namahotel']
-    Hotels
+    Namahotel=pd.read_csv('namahotel.csv', sep=';')
+    Namahotel
     
 elif option == 'Recommendation':
     st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
