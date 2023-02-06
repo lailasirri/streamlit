@@ -110,5 +110,5 @@ elif option == 'Recommendation':
             return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
         # Get recommendations
         recommended_hotel = item_based_rec(picked_userid = userId, picked_hotel = namahotel, number_of_similar_items=3, number_of_recommendations =10)
-
+ 
         st.success(recommended_hotel)
