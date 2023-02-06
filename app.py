@@ -4,7 +4,7 @@ import numpy as np
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
-    ('Home','Recommendation')
+    ('Home','Hotels','Recommendation')
 )
 
 if option == 'Home' or option == '':
@@ -20,7 +20,14 @@ elif option == 'Dataframe':
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
     df #menampilkan dataframe
 
-
+elif option == 'Hotels':
+    st.write("""## List of Hotels in Lombok """) #menampilkan judul halaman similarity
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
+    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
+    Hotels = df['namahotel']
+    Hotels
+    
 elif option == 'Recommendation':
     st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
 
