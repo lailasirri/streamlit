@@ -53,9 +53,9 @@ elif option == 'Recommendation':
         hotels = pd.read_csv('hotel.csv', sep=';')
 
         # Pick a user ID
-        picked_userid = userId
+        picked_userid = 
         # Pick a hotels
-        picked_hotel = 'ASTON Inn Mataram'
+        picked_hotel = 
         # Hotels that the target user has rating
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
         # Similarity score hotels
