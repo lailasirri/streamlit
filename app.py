@@ -56,7 +56,7 @@ elif option == 'Recommendation':
         # Hotels that the target user has rating
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
         # Similarity score hotels
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
+        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
         n = 5
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                                     right=picked_hotel_similarity_score, 
@@ -81,7 +81,7 @@ elif option == 'Recommendation':
             # Loop through unrating hotels          
             for picked_hotel in picked_userid_unrating: 
               # Calculate the similarity score of the picked hotel with other hotels
-              picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
+              picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
               # Rank the similarities between the picked user rating hotel and the picked unrating hotel.
               picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                                           right=picked_hotel_similarity_score, 
