@@ -29,10 +29,34 @@ elif option == 'Recommendation':
     ratings=pd.read_csv('rating.csv', sep=';')
     hotels = pd.read_csv('hotel.csv', sep=';')
     df = pd.merge(ratings, hotels, on='hotelId', how='inner')
+    ratings=pd.read_csv('rating.csv', sep=';')
+    hotels = pd.read_csv('hotel.csv', sep=';')
+    # Keep the hotels with over 1 ratings
+    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
+    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
+    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
+    df_2 = pd.merge(df, agg_ratings_1[['namahotel']], on='namahotel', how='inner')
+    matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+    matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
+    item_similarity = matrix_norm.T.corr()
     userId = df['userId']
     namahotel = df['namahotel']
     picked_userid = userId
     picked_hotel = namahotel
+    # Hotels that the target user has rating
+    picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
+    # Similarity score hotels
+    picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
+    n = 5
+        picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
+                                                    right=picked_hotel_similarity_score, 
+                                                    on='namahotel', 
+                                                    how='inner')\
+                                             .sort_values('similarity_score', ascending=False)[:5]
+        predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
+                                    weights=picked_userid_rating_similarity['similarity_score']), 2)
+        print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
     picked_userid = st.number_input('Enter user ID',0)
     picked_hotel = st.text_input('Enter nama hotel')
 
@@ -49,13 +73,11 @@ elif option == 'Recommendation':
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
         item_similarity = matrix_norm.T.corr()
-        ratings=pd.read_csv('rating.csv', sep=';')
-        hotels = pd.read_csv('hotel.csv', sep=';')
 
         # Pick a user ID
-        picked_userid = df['userId']
+        picked_userid = userId
         # Pick a hotels
-        picked_hotel = df['namahotel']
+        picked_hotel = namahotel
         # Hotels that the target user has rating
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
         # Similarity score hotels
