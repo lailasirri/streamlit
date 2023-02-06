@@ -44,10 +44,6 @@ elif option == 'Recommendation':
     namahotel = df['namahotel']
     picked_userid = userId
     picked_hotel = namahotel
-    # Hotels that the target user has rating
-    picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
-    # Similarity score hotels
-    picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
     picked_userid = st.number_input('Enter user ID',0)
     picked_hotel = st.text_input('Enter nama hotel')
 
