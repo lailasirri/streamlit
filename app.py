@@ -48,15 +48,6 @@ elif option == 'Recommendation':
     picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
     # Similarity score hotels
     picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
-    n = 5
-        picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
-                                                    right=picked_hotel_similarity_score, 
-                                                    on='namahotel', 
-                                                    how='inner')\
-                                             .sort_values('similarity_score', ascending=False)[:5]
-        predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                    weights=picked_userid_rating_similarity['similarity_score']), 2)
-        print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
     picked_userid = st.number_input('Enter user ID',0)
     picked_hotel = st.text_input('Enter nama hotel')
 
