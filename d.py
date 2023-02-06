@@ -69,7 +69,7 @@ elif option == 'Recomendation':
             import operator
             # Hotels that the target user has not rating
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
-            picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[3]==True]['namahotel'].values.tolist()
+            picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[picked_userid]==True]['namahotel'].values.tolist()
             # Hotels that the target user has rating
             picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={1:'rating',2:'rating',3:'rating',4:'rating'})
   
