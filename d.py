@@ -51,7 +51,7 @@ elif option == 'Recomendation':
         # Pick a hotels
         picked_hotel = 'namahotel'
         # Hotels that the target user has rating
-        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId})
+        picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={'userId'})
         # Similarity score hotels
         picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
         n = 5
@@ -85,7 +85,8 @@ elif option == 'Recomendation':
                                                           on='namahotel', 
                                                           how='inner')\
                                                   .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
-              # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 1
+                
+              # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 
               predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
                                                   weights=picked_userid_rating_similarity['similarity_score']), 6)
              # Save the predicted rating in the dictionary
