@@ -124,11 +124,9 @@ elif option == 'Recommendation':
             return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
         # Get recommendations
         recommended_hotel = item_based_rec(picked_userid, picked_hotel, number_of_similar_items=5, number_of_recommendations =10)
- 
+        Jumlah_rekomendasi_benar = len(recommended_hotel)
+        Jumlah_total_rekomemdasi = number_of_recommendations=10
+        Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
         st.success(recommended_hotel)
     
-            Jumlah_rekomendasi_benar = len(recommended_hotel)
-            Jumlah_total_rekomemdasi = number_of_recommendations=10
-
-        Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
         st.succes(Hitrate)
