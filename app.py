@@ -1,8 +1,6 @@
 # Data processing
 import pandas as pd
 import numpy as np
-# Visualization
-import seaborn as sns
 # Streamlit
 import streamlit as st
 from surprise import accuracy
