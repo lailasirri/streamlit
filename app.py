@@ -1,6 +1,16 @@
-import streamlit as st
+# Data processing
 import pandas as pd
 import numpy as np
+import scipy.stats 
+# Visualization
+import seaborn as sns
+# Json
+import json
+# Streamlit
+import streamlit as st
+from surprise import accuracy
+import operator
+import math
 
 option = st.sidebar.selectbox(
     'Silakan pilih:',
