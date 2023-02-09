@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 # Streamlit
 import streamlit as st
-from surprise import accuracy
 import operator
 import math
 
