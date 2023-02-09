@@ -41,8 +41,8 @@ elif option == 'Recommendation':
     matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
     # Item similarity matrix using Pearson correlation
     item_similarity = matrix_norm.T.corr()
-    userId = df['userId']
-    namahotel = df['namahotel']
+    userId = ratings['userId']
+    namahotel = ratings['namahotel']
     picked_userid = userId
     picked_hotel = namahotel
     userId = st.number_input('Enter user ID',0)
