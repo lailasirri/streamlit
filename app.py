@@ -53,6 +53,7 @@ elif option == 'Recommendation':
     namahotel = ratings['namahotel']
     picked_userid = userId
     picked_hotel = namahotel
+    st.image('tr.jpg')
     userId = st.number_input('Enter user ID',0)
     namahotel = st.text_input('Enter nama hotel')
    
