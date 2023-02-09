@@ -135,3 +135,4 @@ elif option == 'Recommendation':
         
         st.write("""Dengan Nilai Hitrate : """)
         st.success(Hitrate)
+         st.image('hotellombok.jpeg')
