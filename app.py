@@ -15,10 +15,7 @@ elif option == 'Dataframe':
     
     #membuat dataframe dengan pandas yang terdiri dari 2 kolom dan 4 baris data
     ratings=pd.read_csv('rating.csv', sep=';')
-    hotels = pd.read_csv('hotel.csv', sep=';')
-
-    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
-    df #menampilkan dataframe
+    rating 
 
 elif option == 'Hotels':
     st.write("""## List of Hotels in Lombok """) #menampilkan judul halaman similarity
@@ -31,38 +28,41 @@ elif option == 'Recommendation':
     st.title('Get Your Preferred Hotel !')
 
     ratings=pd.read_csv('rating.csv', sep=';')
-    hotels = pd.read_csv('hotel.csv', sep=';')
-    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
-    ratings=pd.read_csv('rating.csv', sep=';')
-    hotels = pd.read_csv('hotel.csv', sep=';')
     # Keep the hotels with over 1 ratings
-    df = pd.merge(ratings, hotels, on='hotelId', how='inner')
-    agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
-    agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
-    agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
-    df_2 = pd.merge(df, agg_ratings_1[['namahotel']], on='namahotel', how='inner')
+    # Aggregate by hotel
+    agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+    # Check popular hotels
+    agg_ratings.sort_values(by='number_of_ratings', ascending=False)
+    # Merge data
+    df_2 = pd.merge(ratings, agg_ratings[['namahotel']], on='namahotel', how='inner')
+    # Create user-item matrix
     matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+    # Normalize user-item matrix
     matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
+    # Item similarity matrix using Pearson correlation
     item_similarity = matrix_norm.T.corr()
     userId = df['userId']
     namahotel = df['namahotel']
     picked_userid = userId
     picked_hotel = namahotel
-    
+    userId = st.number_input('Enter user ID',0)
     namahotel = st.text_input('Enter nama hotel')
 
     if st.button('View Recommendation Result'):
 
         ratings=pd.read_csv('rating.csv', sep=';')
-        hotels = pd.read_csv('hotel.csv', sep=';')
-        # Keep the hotels with over 1 ratings
-        df = pd.merge(ratings, hotels, on='hotelId', how='inner')
-        agg_ratings = df.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
-        agg_ratings_1 = agg_ratings[agg_ratings['number_of_ratings']>1]
-        agg_ratings_1.sort_values(by='number_of_ratings', ascending=False)
-        df_2 = pd.merge(df, agg_ratings_1[['namahotel']], on='namahotel', how='inner')
+         # Keep the hotels with over 1 ratings
+         # Aggregate by hotel
+         agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+        # Check popular hotels
+        agg_ratings.sort_values(by='number_of_ratings', ascending=False)
+        # Merge data
+        df_2 = pd.merge(ratings, agg_ratings[['namahotel']], on='namahotel', how='inner')
+        # Create user-item matrix
         matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+        # Normalize user-item matrix
         matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
+        # Item similarity matrix using Pearson correlation
         item_similarity = matrix_norm.T.corr()
 
         # Pick a user ID
@@ -73,18 +73,18 @@ elif option == 'Recommendation':
         picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
         # Similarity score hotels
         picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
-        n = 5
+        n = 10
         picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
                                                     right=picked_hotel_similarity_score, 
                                                     on='namahotel', 
                                                     how='inner')\
-                                             .sort_values('similarity_score', ascending=False)[:5]
+                                             .sort_values('similarity_score', ascending=False)[:10]
         predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                                    weights=picked_userid_rating_similarity['similarity_score']), 2)
+                                    weights=picked_userid_rating_similarity['similarity_score']), 6)
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
         
         # Item-based recommendation function
-        def item_based_rec(picked_userid = userId, picked_hotel = namahotel, number_of_similar_items=3, number_of_recommendations =10):
+        def item_based_rec(picked_userid = userId, picked_hotel = namahotel, number_of_similar_items=5, number_of_recommendations =5):
             import operator
             # Hotels that the target user has not rating
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
@@ -110,9 +110,11 @@ elif option == 'Recommendation':
                                                   weights=picked_userid_rating_similarity['similarity_score']), 6)
              # Save the predicted rating in the dictionary
               rating_prediction[picked_hotel] = predicted_rating
+             # Remove entries with NaN values
+              rating_prediction = {k: v for k, v in rating_prediction.items() if not math.isnan(v)}
              # Return the top recommended movies
             return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
         # Get recommendations
-        recommended_hotel = item_based_rec(picked_userid = userId, picked_hotel = namahotel, number_of_similar_items=3, number_of_recommendations =10)
+        recommended_hotel = item_based_rec(picked_userid = userId, picked_hotel = namahotel, number_of_similar_items=5, number_of_recommendations =5)
  
         st.success(recommended_hotel)
