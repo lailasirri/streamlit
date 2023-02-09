@@ -93,15 +93,17 @@ elif option == 'Recommendation':
         
         # Item-based recommendation function
         def item_based_rec(picked_userid, picked_hotel, number_of_similar_items=5, number_of_recommendations =5):
-            if picked_userid not in matrix_norm:
-                return "User tidak ditemukan atau belum memberikan rating."
             import operator
             # Hotels that the target user has not rating
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
             picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[picked_userid]==True]['namahotel'].values.tolist()
             # Hotels that the target user has rating
             picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_userid:'rating'})
-            
+            # Check if the user has rated any hotels
+            if picked_userid_rating.empty:
+              # If the user has not rated any hotels, recommend the most popular hotels
+              most_popular_hotels = matrix_norm.mean(axis=1).sort_values(ascending=False).index.tolist()
+              return most_popular_hotels[:number_of_recommendations]
             # Dictionary to save the unrating hoteland predicted rating pair
             rating_prediction ={}  
             # Loop through unrating hotels          
