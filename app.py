@@ -126,3 +126,9 @@ elif option == 'Recommendation':
         recommended_hotel = item_based_rec(picked_userid, picked_hotel, number_of_similar_items=5, number_of_recommendations =10)
  
         st.success(recommended_hotel)
+    
+            Jumlah_rekomendasi_benar = len(recommended_hotel)
+            Jumlah_total_rekomemdasi = number_of_recommendations=10
+
+        Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
+        st.succes(Hitrate)
