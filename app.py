@@ -55,7 +55,7 @@ elif option == 'Recommendation':
     picked_hotel = namahotel
     userId = st.number_input('Enter user ID',0)
     namahotel = st.text_input('Enter nama hotel')
-    st.image('hotellombok.jpeg')
+   
 
     if st.button('View Recommendation Result'):
 
