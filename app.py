@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 # Streamlit
 import streamlit as st
-from PIL import image
+from PIL import Image
 #
 import operator
 import math
