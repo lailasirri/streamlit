@@ -14,8 +14,9 @@ option = st.sidebar.selectbox(
 )
 
 if option == 'Home' or option == '':
+    st.write(""" # Welcome to Lombok Island Hotel Recommendation System""")
     st.image('hotellombok.jpeg')
-    st.write("""# Welcome to Lombok Island Hotel Recommendation System
+    st.write("""
 Sistem rekomendasi hotel pulau Lombok adalah sistem yang membantu pengguna menemukan hotel yang sesuai dengan kebutuhan dan preferensi mereka. Ini bisa dilakukan dengan menganalisis data seperti rating dan preferensi pengguna sebelumnya, lokasi, harga, dan fasilitas hotel. Pada metode item-based, sistem akan menganalisis item (hotel) yang serupa dan memberikan rekomendasi hotel berdasarkan hotel yang paling serupa dengan hotel yang pernah diterima pengguna. Metode ColLaborative Filtering menggabungkan beberapa metode lain dan memberikan rekomendasi berdasarkan analisis Collaborative dari data pengguna dan item. Dengan demikian, sistem rekomendasi hotel pulau Lombok dapat membantu pengguna menemukan hotel yang sesuai dengan kebutuhan dan preferensi mereka, mempermudah proses pemesanan, dan membantu pengguna menemukan hotel terbaik untuk dikunjungi saat berlibur di pulau Lombok.""") #menampilkan halaman utama
 elif option == 'Dataframe':
     st.write("""## Dataframe""") #menampilkan judul halaman dataframe
