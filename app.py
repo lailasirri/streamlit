@@ -93,7 +93,8 @@ elif option == 'Recommendation':
         
         # Item-based recommendation function
         def item_based_rec(picked_userid, picked_hotel, number_of_similar_items=5, number_of_recommendations =5):
-            
+            if picked_userid not in matrix_norm:
+                return "User tidak ditemukan atau belum memberikan rating."
             import operator
             # Hotels that the target user has not rating
             picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
