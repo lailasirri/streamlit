@@ -1,0 +1,633 @@
+﻿userId;hotelId;namahotel;rating;tanggal;bintang
+41;1;ASTON Inn Mataram;9.3;25-03-2018;3
+25;1;ASTON Inn Mataram;10;25-03-2018;3
+9;1;ASTON Inn Mataram;8.4;05-03-2018;3
+23;1;ASTON Inn Mataram;8.6;27-02-2018;3
+7;1;ASTON Inn Mataram;9.2;19-01-2018;3
+36;1;ASTON Inn Mataram;10;17-01-2018;3
+16;1;ASTON Inn Mataram;10;04-01-2018;3
+46;1;ASTON Inn Mataram;10;03-01-2018;3
+15;1;ASTON Inn Mataram;9.0;17-10-2017;3
+43;1;ASTON Inn Mataram;8.6;04-09-2017;3
+40;1;ASTON Inn Mataram;7.5;29-07-2017;3
+10;1;ASTON Inn Mataram;10;17-07-2017;3
+11;1;ASTON Inn Mataram;9.7;10-07-2017;3
+3;1;ASTON Inn Mataram;7.9;04-07-2017;3
+21;1;ASTON Inn Mataram;9.6;03-07-2017;3
+30;1;ASTON Inn Mataram;8.8;20-06-2017;3
+11;1;ASTON Inn Mataram;10;29-05-2017;3
+7;1;ASTON Inn Mataram;10;14-05-2017;3
+25;1;ASTON Inn Mataram;2.4;20-04-2017;3
+45;1;ASTON Inn Mataram;10;30-03-2017;3
+28;1;ASTON Inn Mataram;9.8;06-03-2017;3
+11;1;ASTON Inn Mataram;8.4;02-03-2017;3
+4;1;ASTON Inn Mataram;10;25-02-2017;3
+6;1;ASTON Inn Mataram;9.0;11-02-2017;3
+6;1;ASTON Inn Mataram;7.9;24-12-2016;3
+38;1;ASTON Inn Mataram;9.6;19-12-2016;3
+36;1;ASTON Inn Mataram;7.8;17-12-2016;3
+48;1;ASTON Inn Mataram;10;14-12-2016;3
+10;1;ASTON Inn Mataram;9.8;18-10-2016;3
+48;1;ASTON Inn Mataram;8.8;18-10-2016;3
+19;1;ASTON Inn Mataram;4.6;27-09-2016;3
+20;1;ASTON Inn Mataram;7.7;19-09-2016;3
+43;1;ASTON Inn Mataram;8.1;10-09-2016;3
+15;1;ASTON Inn Mataram;7.2;27-08-2016;3
+29;1;ASTON Inn Mataram;7.9;18-08-2016;3
+25;1;ASTON Inn Mataram;10;22-07-2016;3
+3;2;ASTON Sunset Beach Resort Gili Trawangan ;9.8;02-03-2017;4
+3;2;ASTON Sunset Beach Resort Gili Trawangan ;10;27-03-2022;4
+17;2;ASTON Sunset Beach Resort Gili Trawangan ;9.6;14-02-2022;4
+34;2;ASTON Sunset Beach Resort Gili Trawangan ;10;15-06-2021;4
+14;2;ASTON Sunset Beach Resort Gili Trawangan ;8.8;04-06-2021;4
+40;2;ASTON Sunset Beach Resort Gili Trawangan ;7.6;05-01-2020;4
+2;2;ASTON Sunset Beach Resort Gili Trawangan ;10;15-11-2019;4
+6;2;ASTON Sunset Beach Resort Gili Trawangan ;10;05-11-2019;4
+33;2;ASTON Sunset Beach Resort Gili Trawangan ;10;15-11-2019;4
+3;2;ASTON Sunset Beach Resort Gili Trawangan ;10;24-10-2019;4
+25;2;ASTON Sunset Beach Resort Gili Trawangan ;9.6;22-10-2019;4
+17;2;ASTON Sunset Beach Resort Gili Trawangan ;9.6;30-06-2019;4
+40;2;ASTON Sunset Beach Resort Gili Trawangan ;10;26-06-2019;4
+36;2;ASTON Sunset Beach Resort Gili Trawangan ;9.2;23-12-2018;4
+7;2;ASTON Sunset Beach Resort Gili Trawangan ;9.3;23-12-2019;4
+3;2;ASTON Sunset Beach Resort Gili Trawangan ;10;13-03-2018;4
+36;2;ASTON Sunset Beach Resort Gili Trawangan ;8.8;18-02-2018;4
+16;2;ASTON Sunset Beach Resort Gili Trawangan ;4.9;08-02-2018;4
+29;2;ASTON Sunset Beach Resort Gili Trawangan ;8.2;07-02-2018;4
+6;2;ASTON Sunset Beach Resort Gili Trawangan ;7.9;03-01-2018;4
+49;2;ASTON Sunset Beach Resort Gili Trawangan ;10;26-12-2017;4
+7;2;ASTON Sunset Beach Resort Gili Trawangan ;8.1;25-10-2017;4
+9;2;ASTON Sunset Beach Resort Gili Trawangan ;9.0;27-09-2017;4
+5;2;ASTON Sunset Beach Resort Gili Trawangan ;7.3;01-09-2017;4
+11;2;ASTON Sunset Beach Resort Gili Trawangan ;9.7;30-01-2017;4
+42;2;ASTON Sunset Beach Resort Gili Trawangan ;8.3;22-12-2016;4
+50;2;ASTON Sunset Beach Resort Gili Trawangan ;9.2;29-03-2016;4
+23;2;ASTON Sunset Beach Resort Gili Trawangan ;10;07-12-2015;4
+25;2;ASTON Sunset Beach Resort Gili Trawangan ;10;30-11-2015;4
+21;2;ASTON Sunset Beach Resort Gili Trawangan ;8.4;19-03-2015;4
+2;3;Favehotel Langko;8.0;26-12-2022;3
+15;3;Favehotel Langko;8.0;26-04-2022;3
+34;3;Favehotel Langko;8.4;30-01-2017;3
+50;3;Favehotel Langko;8.4;02-11-2020;3
+30;3;Favehotel Langko;9.2;20-08-2020;3
+10;3;Favehotel Langko;10;28-07-2020;3
+43;3;Favehotel Langko;;20-08-2020;3
+43;3;Favehotel Langko;8.8;12-06-2020;3
+31;3;Favehotel Langko;10;30-05-2020;3
+38;3;Favehotel Langko;10;26-02-2020;3
+24;3;Favehotel Langko;8.8;20-02-2020;3
+24;3;Favehotel Langko;7.2;05-01-2020;3
+48;3;Favehotel Langko;8.4;09-10-2019;3
+35;3;Favehotel Langko;9.6;25-03-2019;3
+5;3;Favehotel Langko;10;16-03-2019;3
+30;3;Favehotel Langko;7.6;17-11-2018;3
+49;3;Favehotel Langko;10;31-10-2018;3
+28;3;Favehotel Langko;8.0;12-09-2018;3
+44;3;Favehotel Langko;10;20-07-2018;3
+21;3;Favehotel Langko;8.1;28-04-2018;3
+48;3;Favehotel Langko;10;25-04-2018;3
+5;3;Favehotel Langko;9.8;16-04-2018;3
+19;3;Favehotel Langko;7.8;12-02-2018;3
+10;3;Favehotel Langko;9.6;20-01-2018;3
+11;3;Favehotel Langko;9.4;17-01-2018;3
+27;3;Favehotel Langko;10;11-01-2018;3
+29;3;Favehotel Langko;7.7;11-01-2018;3
+37;3;Favehotel Langko;8.7;04-01-2018;3
+16;3;Favehotel Langko;8.5;02-01-2018;3
+2;3;Favehotel Langko;8.2;01-01-2018;3
+19;3;Favehotel Langko;10;25-12-2017;3
+31;3;Favehotel Langko;8.2;27-11-2017;3
+27;3;Favehotel Langko;6.4;12-10-2017;3
+3;3;Favehotel Langko;9.2;16-09-2017;3
+23;3;Favehotel Langko;9.5;04-09-2017;3
+32;3;Favehotel Langko;9.8;07-08-2017;3
+11;3;Favehotel Langko;8.2;25-07-2017;3
+11;3;Favehotel Langko;10;10-07-2017;3
+50;3;Favehotel Langko;9.0;04-07-2017;3
+25;3;Favehotel Langko;9.4;04-07-2017;3
+38;3;Favehotel Langko;8.4;29-06-2017;3
+4;3;Favehotel Langko;9.8;29-03-2017;3
+17;3;Favehotel Langko;6.5;06-03-2017;3
+26;3;Favehotel Langko;10;08-02-2017;3
+31;3;Favehotel Langko;6.6;03-02-2017;3
+46;3;Favehotel Langko;8.7;26-01-2017;3
+25;3;Favehotel Langko;9.3;23-01-2017;3
+46;3;Favehotel Langko;10;06-01-2017;3
+23;3;Favehotel Langko;9.0;05-01-2017;3
+6;3;Favehotel Langko;9.1;04-01-2017;3
+40;3;Favehotel Langko;9.9;25-12-2016;3
+24;3;Favehotel Langko;8.8;25-09-2016;3
+34;3;Favehotel Langko;6.4;13-09-2016;3
+49;3;Favehotel Langko;7.4;30-07-2016;3
+43;3;Favehotel Langko;8.4;29-07-2016;3
+27;3;Favehotel Langko;7.4;10-07-2016;3
+49;3;Favehotel Langko;8.4;06-05-2016;3
+20;3;Favehotel Langko;8.4;03-05-2016;3
+47;3;Favehotel Langko;10;20-04-2016;3
+21;3;Favehotel Langko;5.8;04-03-2016;3
+47;3;Favehotel Langko;6.3;12-02-2016;3
+25;3;Favehotel Langko;10;01-02-2016;3
+23;3;Favehotel Langko;9.3;22-01-2016;3
+27;3;Favehotel Langko;9.5;16-01-2016;3
+28;3;Favehotel Langko;5.8;03-01-2016;3
+47;3;Favehotel Langko;8.0;02-01-2016;3
+38;3;Favehotel Langko;8.3;02-01-2016;3
+44;3;Favehotel Langko;10;31-12-2015;3
+3;3;Favehotel Langko;8.3;27-12-2015;3
+37;3;Favehotel Langko;7.2;09-12-2015;3
+31;3;Favehotel Langko;9.7;18-11-2015;3
+32;3;Favehotel Langko;9.1;04-11-2015;3
+29;3;Favehotel Langko;10;17-10-2015;3
+10;3;Favehotel Langko;6.2;15-10-2015;3
+38;3;Favehotel Langko;7.4;04-10-2015;3
+10;3;Favehotel Langko;8.8;29-09-2015;3
+23;3;Favehotel Langko;10;19-08-2015;3
+24;3;Favehotel Langko;8.4;12-08-2015;3
+19;3;Favehotel Langko;8.2;23-05-2015;3
+42;3;Favehotel Langko;6.5;27-04-2015;3
+49;4;Gili Bagaz Cottages Lombok;7.6;14-02-2018;2
+34;4;Gili Bagaz Cottages Lombok;7.7;31-12-2017;2
+45;4;Gili Bagaz Cottages Lombok;7.7;19-08-2015;2
+44;4;Gili Bagaz Cottages Lombok;9.6;21-11-2017;2
+30;4;Gili Bagaz Cottages Lombok;10;10-10-2017;2
+47;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;7.2;23-12-2022;3
+2;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;9.6;05-07-2022;3
+13;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;8.2;23-05-2015;3
+31;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;8.0;09-11-2019;3
+25;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;9.2;06-11-2019;3
+27;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;8.4;25-10-2019;3
+47;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;10;22-10-2019;3
+37;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;8.2;21-11-2017;3
+28;6;Lombok Plaza Hotel dan Convention Cakranegara;8.8;26-12-2019;3
+6;6;Lombok Plaza Hotel dan Convention Cakranegara;8.9;26-12-2020;3
+37;6;Lombok Plaza Hotel dan Convention Cakranegara;9.6;18-06-2018;3
+1;6;Lombok Plaza Hotel dan Convention Cakranegara;8.8;15-03-2018;3
+3;6;Lombok Plaza Hotel dan Convention Cakranegara;8.0;19-02-2018;3
+35;6;Lombok Plaza Hotel dan Convention Cakranegara;8.8;31-12-2017;3
+11;6;Lombok Plaza Hotel dan Convention Cakranegara;8.9;22-10-2019;3
+47;6;Lombok Plaza Hotel dan Convention Cakranegara;10;08-12-2017;3
+7;6;Lombok Plaza Hotel dan Convention Cakranegara;10;28-11-2017;3
+1;6;Lombok Plaza Hotel dan Convention Cakranegara;9.2;23-11-2017;3
+24;6;Lombok Plaza Hotel dan Convention Cakranegara;6.8;29-05-2017;3
+27;6;Lombok Plaza Hotel dan Convention Cakranegara;10;29-03-2017;3
+14;6;Lombok Plaza Hotel dan Convention Cakranegara;6.6;17-12-2016;3
+34;6;Lombok Plaza Hotel dan Convention Cakranegara;8.6;24-08-2016;3
+19;6;Lombok Plaza Hotel dan Convention Cakranegara;6.3;12-08-2016;3
+16;7;Gili Khayangan Villas Lombok;7.6;22-06-2018;3
+36;7;Gili Khayangan Villas Lombok;8.8;26-02-2018;3
+27;8;Jeeva Klui Resort Lombok;8.7;16-03-2015;3
+13;8;Jeeva Klui Resort Lombok;8.8;16-03-2016;4
+22;9;Idoop Hotel Lombok;6.0;13-12-2019;3
+48;9;Idoop Hotel Lombok;8.7;16-03-2015;3
+43;9;Idoop Hotel Lombok;9.6;08-03-2019;3
+13;9;Idoop Hotel Lombok;9.2;12-01-2019;3
+33;9;Idoop Hotel Lombok;8.0;28-06-2018;3
+31;9;Idoop Hotel Lombok;4.0;28-03-2018;3
+32;9;Idoop Hotel Lombok;8.4;13-02-2018;3
+32;9;Idoop Hotel Lombok;6.0;09-02-2018;3
+6;9;Idoop Hotel Lombok;8.0;19-10-2017;3
+45;9;Idoop Hotel Lombok;10;03-09-2017;3
+45;9;Idoop Hotel Lombok;9.2;03-07-2017;3
+21;9;Idoop Hotel Lombok;9.6;13-12-2016;3
+13;9;Idoop Hotel Lombok;8.2;19-07-2016;3
+6;9;Idoop Hotel Lombok;7.9;04-05-2016;3
+44;9;Idoop Hotel Lombok;9.6;09-02-2018;3
+37;9;Idoop Hotel Lombok;8.4;26-02-2016;3
+32;9;Idoop Hotel Lombok;7.9;17-02-2016;3
+23;9;Idoop Hotel Lombok;9.1;22-12-2015;3
+20;9;Idoop Hotel Lombok;6.4;23-11-2015;3
+6;9;Idoop Hotel Lombok;10;27-08-2015;3
+7;9;Idoop Hotel Lombok;9.0;18-08-2015;3
+20;9;Idoop Hotel Lombok;6.9;04-08-2015;3
+23;9;Idoop Hotel Lombok;7.6;16-07-2015;3
+3;9;Idoop Hotel Lombok;7.8;17-06-2015;3
+47;10;RedDoorz near Mataram University Lombok;10;24-03-2021;2
+24;10;RedDoorz near Mataram University Lombok;10;16-07-2015;2
+38;10;RedDoorz near Mataram University Lombok;10;24-12-2019;2
+30;10;RedDoorz near Mataram University Lombok;10;21-11-2019;2
+37;10;RedDoorz near Mataram University Lombok;9.2;16-11-2019;2
+31;10;RedDoorz near Mataram University Lombok;10;12-11-2019;2
+21;10;RedDoorz near Mataram University Lombok;10;25-10-2019;2
+37;10;RedDoorz near Mataram University Lombok;6.4;19-10-2019;2
+10;10;RedDoorz near Mataram University Lombok;10;12-11-2019;2
+37;10;RedDoorz near Mataram University Lombok;10;12-10-2019;2
+38;10;RedDoorz near Mataram University Lombok;10;08-10-2019;2
+15;10;RedDoorz near Mataram University Lombok;10;07-10-2019;2
+12;10;RedDoorz near Mataram University Lombok;10;04-10-2019;2
+9;10;RedDoorz near Mataram University Lombok;9.6;14-09-2019;2
+42;10;RedDoorz near Mataram University Lombok;8.8;07-09-2019;2
+50;11;Anema Wellnes Resort Gili Lombok;8.8;09-06-2017;5
+31;12;Holiday Resort Lombok;9.2;17-03-2021;4
+39;12;Holiday Resort Lombok;9.2;27-08-2019;4
+8;12;Holiday Resort Lombok;8.4;20-06-2018;4
+43;12;Holiday Resort Lombok;8.8;05-06-2018;4
+25;12;Holiday Resort Lombok;8.8;03-12-2017;4
+5;12;Holiday Resort Lombok;9.2;14-12-2016;4
+42;12;Holiday Resort Lombok;7.2;24-05-2016;4
+44;12;Holiday Resort Lombok;8.0;07-04-2014;4
+4;12;Holiday Resort Lombok;8.4;07-04-2014;4
+32;12;Holiday Resort Lombok;8.0;07-04-2014;4
+33;12;Holiday Resort Lombok;7.7;07-04-2014;4
+3;12;Holiday Resort Lombok;6.2;05-03-2014;4
+33;12;Holiday Resort Lombok;8.6;05-03-2014;4
+20;12;Holiday Resort Lombok;6.9;05-03-2014;4
+18;13;Lombok Garden Hotel Lombok;10;19-12-2022;3
+15;13;Lombok Garden Hotel Lombok;8.8;02-10-2022;3
+19;13;Lombok Garden Hotel Lombok;8.8;21-11-2019;3
+8;13;Lombok Garden Hotel Lombok;5.6;26-12-2018;3
+46;13;Lombok Garden Hotel Lombok;8.8;19-12-2022;3
+12;13;Lombok Garden Hotel Lombok;9.2;01-08-2018;3
+50;13;Lombok Garden Hotel Lombok;8.0;10-07-2018;3
+1;13;Lombok Garden Hotel Lombok;10;24-06-2018;3
+19;13;Lombok Garden Hotel Lombok;10;30-01-2018;3
+24;13;Lombok Garden Hotel Lombok;6.8;20-01-2018;3
+7;13;Lombok Garden Hotel Lombok;6.9;01-08-2018;3
+16;13;Lombok Garden Hotel Lombok;7.2;02-01-2018;3
+4;13;Lombok Garden Hotel Lombok;9.9;19-05-2017;3
+32;13;Lombok Garden Hotel Lombok;8.4;05-05-2017;3
+29;13;Lombok Garden Hotel Lombok;6.9;05-02-2017;3
+21;13;Lombok Garden Hotel Lombok;9.6;26-01-2017;3
+20;13;Lombok Garden Hotel Lombok;5.4;27-12-2016;3
+44;13;Lombok Garden Hotel Lombok;10;27-10-2016;3
+49;13;Lombok Garden Hotel Lombok;5.5;29-12-2015;3
+45;13;Lombok Garden Hotel Lombok;5.6;21-11-2019;3
+18;13;Lombok Garden Hotel Lombok;6.7;29-12-2015;3
+35;13;Lombok Garden Hotel Lombok;5.7;19-10-2015;3
+16;14;Gili Sands Beach Club Lombok;8.4;08-12-2017;3
+7;15;Central Inn Senggigi Lombok;8.0;03-01-2023;3
+35;15;Central Inn Senggigi Lombok;10;19-08-2019;3
+44;15;Central Inn Senggigi Lombok;7.6;18-08-2019;3
+45;15;Central Inn Senggigi Lombok;2.8;14-05-2018;3
+34;15;Central Inn Senggigi Lombok;8.4;22-10-2017;3
+35;16;Grand Madani Hotel Syariah Lombok;10;27-08-2019;3
+36;16;Grand Madani Hotel Syariah Lombok;10;02-07-2019;3
+30;16;Grand Madani Hotel Syariah Lombok;8.0;28-04-2019;3
+14;16;Grand Madani Hotel Syariah Lombok;10;16-09-2018;3
+5;16;Grand Madani Hotel Syariah Lombok;9.2;13-06-2018;3
+19;16;Grand Madani Hotel Syariah Lombok;9.6;31-05-2018;3
+7;16;Grand Madani Hotel Syariah Lombok;2.0;09-05-2018;3
+5;16;Grand Madani Hotel Syariah Lombok;8.0;26-04-2018;3
+2;16;Grand Madani Hotel Syariah Lombok;8.8;14-02-2018;3
+23;16;Grand Madani Hotel Syariah Lombok;8.8;13-02-2018;3
+21;16;Grand Madani Hotel Syariah Lombok;9.8;09-02-2018;3
+23;16;Grand Madani Hotel Syariah Lombok;9.6;20-12-2017;3
+25;16;Grand Madani Hotel Syariah Lombok;10;19-11-2017;3
+3;16;Grand Madani Hotel Syariah Lombok;9.4;29-10-2017;3
+6;17;Santika Mataram Lombok;8.8;15-06-2022;3
+44;17;Santika Mataram Lombok;9.6;22-03-2022;3
+16;17;Santika Mataram Lombok;9.2;07-10-2019;3
+50;17;Santika Mataram Lombok;10;09-07-2019;3
+28;17;Santika Mataram Lombok;9.2;20-06-2018;3
+50;17;Santika Mataram Lombok;8.0;07-05-2018;3
+44;17;Santika Mataram Lombok;5.2;10-02-2018;3
+23;17;Santika Mataram Lombok;10;09-02-2018;3
+1;17;Santika Mataram Lombok;10;17-12-2017;3
+19;17;Santika Mataram Lombok;9.2;17-11-2017;3
+6;17;Santika Mataram Lombok;9.0;18-10-2017;3
+27;17;Santika Mataram Lombok;7.9;13-01-2017;3
+32;17;Santika Mataram Lombok;8.1;04-01-2017;3
+18;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;6.8;28-09-2022;5
+48;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;9.6;16-08-2022;5
+44;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;9.6;28-09-2022;5
+19;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;4.0;06-06-2022;5
+24;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;9.6;27-03-2020;5
+20;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;7.2;28-01-2020;5
+44;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;10;24-01-2020;5
+42;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;10;10-09-2019;5
+29;19;RedDoorz Syariah near Lombok Epicentrum Mall;7.2;21-02-2022;2
+35;19;RedDoorz Syariah near Lombok Epicentrum Mall;10;17-04-2021;2
+31;19;RedDoorz Syariah near Lombok Epicentrum Mall;10;16-03-2021;2
+47;19;RedDoorz Syariah near Lombok Epicentrum Mall;10;03-03-2021;2
+16;20;SAME Hotel Lombok;7.2;02-03-2022;2
+2;20;SAME Hotel Lombok;10;28-11-2021;2
+11;20;SAME Hotel Lombok;8.4;27-11-2021;2
+37;20;SAME Hotel Lombok;10;13-11-2021;2
+5;20;SAME Hotel Lombok;10;03-11-2020;2
+8;20;SAME Hotel Lombok;10;05-02-2020;2
+13;21;M Hotel Lombok;10;10-09-2019;2
+36;21;M Hotel Lombok;8.4;28-04-2019;2
+22;21;M Hotel Lombok;8.0;31-01-2019;2
+46;21;M Hotel Lombok;9.2;16-07-2018;2
+27;21;M Hotel Lombok;8.0;27-04-2018;2
+14;21;M Hotel Lombok;6.8;31-03-2018;2
+10;21;M Hotel Lombok;5.2;13-02-2018;2
+2;21;M Hotel Lombok;10;30-01-2018;2
+13;21;M Hotel Lombok;10;29-01-2018;2
+18;21;M Hotel Lombok;9.2;09-09-2017;2
+40;21;M Hotel Lombok;7.4;04-08-2017;2
+4;21;M Hotel Lombok;6.1;27-07-2017;2
+40;21;M Hotel Lombok;9.8;29-01-2017;2
+25;21;M Hotel Lombok;9.3;02-01-2017;2
+29;21;M Hotel Lombok;8.4;29-12-2016;2
+11;21;M Hotel Lombok;7.2;27-12-2016;2
+47;21;M Hotel Lombok;9.4;26-12-2016;2
+18;21;M Hotel Lombok;7.6;31-10-2016;2
+31;21;M Hotel Lombok;8.4;18-10-2016;2
+20;21;M Hotel Lombok;4.4;24-09-2016;2
+50;21;M Hotel Lombok;7.6;08-09-2016;2
+22;21;M Hotel Lombok;8.8;10-08-2016;2
+6;22;RedDoorz Jalan Pendidikan Mataram Lombok;5.6;01-01-2023;2
+17;22;RedDoorz Jalan Pendidikan Mataram Lombok;10;06-10-2021;2
+32;22;RedDoorz Jalan Pendidikan Mataram Lombok;7.6;04-10-2021;2
+26;22;RedDoorz Jalan Pendidikan Mataram Lombok;10;08-07-2021;2
+47;22;RedDoorz Jalan Pendidikan Mataram Lombok;10;02-07-2021;2
+33;22;RedDoorz Jalan Pendidikan Mataram Lombok;10;30-03-2021;2
+40;22;RedDoorz Jalan Pendidikan Mataram Lombok;10;28-03-2021;2
+31;23;Aruna Senggigi Resort ;10;10-07-2018;4
+35;23;Aruna Senggigi Resort ;9.6;01-07-2018;4
+17;23;Aruna Senggigi Resort ;8.0;10-05-2018;4
+36;23;Aruna Senggigi Resort ;10;07-02-2018;4
+6;23;Aruna Senggigi Resort ;9.6;28-12-2017;4
+23;23;Aruna Senggigi Resort ;9.2;18-12-2017;4
+17;23;Aruna Senggigi Resort ;6.4;01-08-2017;4
+17;23;Aruna Senggigi Resort ;8.4;20-07-2017;4
+23;23;Aruna Senggigi Resort ;8.4;29-06-2017;4
+42;23;Aruna Senggigi Resort ;8.4;29-06-2017;4
+38;23;Aruna Senggigi Resort ;8.3;15-05-2017;4
+49;23;Aruna Senggigi Resort ;7.5;25-04-2017;4
+45;23;Aruna Senggigi Resort ;8.4;03-10-2016;4
+12;23;Aruna Senggigi Resort ;7.3;25-04-2016;4
+21;23;Aruna Senggigi Resort ;5.0;08-12-2015;4
+20;23;Aruna Senggigi Resort ;5.5;20-10-2015;4
+20;23;Aruna Senggigi Resort ;9.9;07-03-2014;4
+25;23;Aruna Senggigi Resort ;9.8;07-03-2014;4
+37;23;Aruna Senggigi Resort ;9.4;07-03-2014;4
+39;24;Katamaran Hotel dan Resort Lombok;10;07-10-2019;5
+27;24;Katamaran Hotel dan Resort Lombok;10;09-11-2019;5
+19;24;Katamaran Hotel dan Resort Lombok;9.2;06-06-2019;5
+28;24;Katamaran Hotel dan Resort Lombok;10;14-05-2018;5
+47;24;Katamaran Hotel dan Resort Lombok;6.4;16-02-2018;5
+47;24;Katamaran Hotel dan Resort Lombok;9.6;17-08-2017;5
+34;24;Katamaran Hotel dan Resort Lombok;8.0;30-06-2017;5
+33;25;Kebun Villas and Resort Lombok;9.2;28-12-2017;4
+37;25;Kebun Villas and Resort Lombok;8.0;24-12-2017;4
+33;25;Kebun Villas and Resort Lombok;8.8;12-07-2017;4
+41;25;Kebun Villas and Resort Lombok;8.8;04-05-2017;4
+15;25;Kebun Villas and Resort Lombok;9.2;27-02-2017;4
+22;26;Hotel Palapa Mataram;8.0;23-02-2018;1
+45;26;Hotel Palapa Mataram;8.0;27-12-2017;1
+25;26;Hotel Palapa Mataram;9.2;04-09-2017;1
+27;26;Hotel Palapa Mataram;8.8;04-07-2017;1
+49;26;Hotel Palapa Mataram;7.2;28-06-2017;1
+2;27;Citilike Hotel Lombok;7.6;09-01-2020;3
+8;27;Citilike Hotel Lombok;8.8;12-12-2019;3
+15;27;Citilike Hotel Lombok;9.2;13-09-2019;3
+39;28;Lombok Astoria Mataram;10;21-09-2020;4
+43;28;Lombok Astoria Mataram;9.6;26-02-2020;4
+13;28;Lombok Astoria Mataram;8.0;06-01-2020;4
+21;28;Lombok Astoria Mataram;7.2;15-11-2019;4
+23;28;Lombok Astoria Mataram;8.8;13-09-2019;4
+35;28;Lombok Astoria Mataram;8.8;10-04-2019;4
+38;28;Lombok Astoria Mataram;9.6;08-04-2019;4
+48;28;Lombok Astoria Mataram;10;18-02-2019;4
+31;28;Lombok Astoria Mataram;8.8;14-07-2018;4
+49;28;Lombok Astoria Mataram;9.6;22-06-2018;4
+28;28;Lombok Astoria Mataram;10;20-06-2018;4
+21;28;Lombok Astoria Mataram;10;19-06-2018;4
+27;28;Lombok Astoria Mataram;9.0;19-02-2018;4
+7;28;Lombok Astoria Mataram;10;06-02-2018;4
+21;28;Lombok Astoria Mataram;9.3;18-01-2018;4
+40;28;Lombok Astoria Mataram;10;13-01-2018;4
+34;28;Lombok Astoria Mataram;9.7;03-01-2018;4
+14;28;Lombok Astoria Mataram;8.5;01-01-2018;4
+27;28;Lombok Astoria Mataram;10;26-12-2017;4
+22;28;Lombok Astoria Mataram;9.4;24-12-2017;4
+49;28;Lombok Astoria Mataram;10;18-12-2017;4
+3;28;Lombok Astoria Mataram;10;03-12-2017;4
+7;28;Lombok Astoria Mataram;10;06-09-2017;4
+34;28;Lombok Astoria Mataram;9.8;15-08-2017;4
+31;28;Lombok Astoria Mataram;9.7;09-08-2017;4
+33;28;Lombok Astoria Mataram;9.7;20-07-2017;4
+16;28;Lombok Astoria Mataram;10;08-07-2017;4
+25;28;Lombok Astoria Mataram;7.4;02-07-2017;4
+35;28;Lombok Astoria Mataram;8.8;02-07-2017;4
+30;28;Lombok Astoria Mataram;10;01-07-2017;4
+41;28;Lombok Astoria Mataram;10;01-07-2017;4
+17;28;Lombok Astoria Mataram;10;01-07-2017;4
+38;28;Lombok Astoria Mataram;8.4;01-07-2017;4
+3;28;Lombok Astoria Mataram;10;16-06-2017;4
+2;28;Lombok Astoria Mataram;9.1;26-05-2017;4
+32;28;Lombok Astoria Mataram;10;21-04-2017;4
+48;28;Lombok Astoria Mataram;10;14-04-2017;4
+7;28;Lombok Astoria Mataram;9.4;11-04-2017;4
+24;28;Lombok Astoria Mataram;9.9;20-03-2017;4
+19;28;Lombok Astoria Mataram;9.2;23-02-2017;4
+32;28;Lombok Astoria Mataram;9.9;21-02-2017;4
+27;28;Lombok Astoria Mataram;6.6;20-02-2017;4
+13;28;Lombok Astoria Mataram;9.1;20-02-2017;4
+34;28;Lombok Astoria Mataram;8.1;16-01-2017;4
+8;29;Sheraton Senggigi Beach Resort;9.6;26-12-2019;5
+1;30;Origin Lombok;8.8;15-11-2022;4
+18;30;Origin Lombok;9.6;18-06-2021;4
+33;30;Origin Lombok;8.0;16-05-2021;4
+7;30;Origin Lombok;10;08-03-2021;4
+7;31;Lombok Raya Hotel;9.2;30-12-2019;4
+16;31;Lombok Raya Hotel;10;03-07-2019;4
+33;31;Lombok Raya Hotel;10;09-07-2018;4
+38;31;Lombok Raya Hotel;5.6;19-04-2018;4
+13;31;Lombok Raya Hotel;7.6;21-03-2018;4
+5;31;Lombok Raya Hotel;9.2;11-01-2018;4
+43;31;Lombok Raya Hotel;7.2;18-12-2017;4
+14;31;Lombok Raya Hotel;10;11-12-2017;4
+12;31;Lombok Raya Hotel;8.0;16-11-2017;4
+42;31;Lombok Raya Hotel;6.0;29-06-2017;4
+33;31;Lombok Raya Hotel;10;24-03-2017;4
+25;31;Lombok Raya Hotel;9.8;04-01-2017;4
+18;31;Lombok Raya Hotel;10;02-01-2017;4
+40;31;Lombok Raya Hotel;6.4;30-12-2016;4
+14;31;Lombok Raya Hotel;6.5;16-11-2017;4
+9;31;Lombok Raya Hotel;10;09-05-2016;4
+17;31;Lombok Raya Hotel;8.4;27-03-2016;4
+27;31;Lombok Raya Hotel;8.2;30-08-2015;4
+28;31;Lombok Raya Hotel;6.2;30-12-2014;4
+47;32;Svarga Resort Lombok;7.2;07-05-2018;4
+20;32;Svarga Resort Lombok;8.8;02-01-2018;4
+1;32;Svarga Resort Lombok;9.6;28-11-2017;4
+21;32;Svarga Resort Lombok;9.2;13-09-2017;4
+8;32;Svarga Resort Lombok;9.2;04-07-2017;4
+1;32;Svarga Resort Lombok;6.0;10-04-2017;4
+5;32;Svarga Resort Lombok;9.6;08-03-2017;4
+43;32;Svarga Resort Lombok;10;27-02-2017;4
+10;32;Svarga Resort Lombok;8.0;23-12-2016;4
+14;32;Svarga Resort Lombok;10;23-12-2016;4
+22;32;Svarga Resort Lombok;7.0;21-11-2016;4
+36;32;Svarga Resort Lombok;5.8;26-09-2016;4
+17;32;Svarga Resort Lombok;9.2;10-08-2016;4
+45;32;Svarga Resort Lombok;8.4;15-02-2016;4
+19;33;Montana Premier Senggigi Lombok;10;14-10-2019;4
+14;33;Montana Premier Senggigi Lombok;8.0;26-12-2018;4
+49;34;Batatu Villa Lombok;10;26-03-2022;4
+16;35;Hastina Hotel Lombok;8.8;03-04-2021;
+48;35;Hastina Hotel Lombok;10;05-12-2019;
+23;35;Hastina Hotel Lombok;10;11-03-2019;
+50;35;Hastina Hotel Lombok;8.8;11-10-2018;
+14;35;Hastina Hotel Lombok;8.4;17-09-2018;
+37;36;Jayakarta Hotel Lombok;9.6;22-06-2018;4
+49;36;Jayakarta Hotel Lombok;10;17-06-2018;4
+9;36;Jayakarta Hotel Lombok;8.0;07-02-2018;4
+1;36;Jayakarta Hotel Lombok;9.2;25-01-2018;4
+49;36;Jayakarta Hotel Lombok;9.2;26-12-2017;4
+24;36;Jayakarta Hotel Lombok;10;18-09-2017;4
+1;36;Jayakarta Hotel Lombok;8.0;15-08-2017;4
+36;36;Jayakarta Hotel Lombok;8.0;27-07-2017;4
+24;36;Jayakarta Hotel Lombok;7.2;24-07-2017;4
+46;36;Jayakarta Hotel Lombok;9.2;14-07-2017;4
+4;36;Jayakarta Hotel Lombok;7.0;01-07-2017;4
+4;36;Jayakarta Hotel Lombok;10;28-06-2017;4
+31;36;Jayakarta Hotel Lombok;10;19-02-2017;4
+50;36;Jayakarta Hotel Lombok;9.6;19-11-2016;4
+22;36;Jayakarta Hotel Lombok;6.8;01-03-2015;4
+42;36;Jayakarta Hotel Lombok;8.4;06-05-2014;4
+33;36;Jayakarta Hotel Lombok;8.7;23-04-2014;4
+43;36;Jayakarta Hotel Lombok;7.4;20-03-2014;4
+36;36;Jayakarta Hotel Lombok;6.4;20-03-2014;4
+18;37;Pandora Hotel Lombok;9.6;28-09-2019;2
+14;37;Pandora Hotel Lombok;10;03-06-2019;2
+30;38;Natya Hotel Gili Trawangan Lombok;9.6;22-06-2021;3
+13;38;Natya Hotel Gili Trawangan Lombok;9.6;22-06-2021;3
+41;38;Natya Hotel Gili Trawangan Lombok;10;09-11-2019;3
+41;38;Natya Hotel Gili Trawangan Lombok;10;31-10-2019;3
+35;38;Natya Hotel Gili Trawangan Lombok;10;17-12-2018;3
+7;38;Natya Hotel Gili Trawangan Lombok;8.8;10-03-2018;3
+29;38;Natya Hotel Gili Trawangan Lombok;8.4;11-02-2018;3
+21;38;Natya Hotel Gili Trawangan Lombok;8.8;04-02-2018;3
+36;38;Natya Hotel Gili Trawangan Lombok;10;24-01-2018;3
+5;38;Natya Hotel Gili Trawangan Lombok;10;09-01-2018;3
+32;38;Natya Hotel Gili Trawangan Lombok;10;26-12-2017;3
+19;38;Natya Hotel Gili Trawangan Lombok;10;26-05-2017;3
+47;38;Natya Hotel Gili Trawangan Lombok;7.9;05-05-2017;3
+46;38;Natya Hotel Gili Trawangan Lombok;7.8;01-04-2017;3
+36;38;Natya Hotel Gili Trawangan Lombok;6.4;20-02-2017;3
+39;38;Natya Hotel Gili Trawangan Lombok;8.4;16-12-2016;3
+37;38;Natya Hotel Gili Trawangan Lombok;7.4;09-10-2016;3
+29;38;Natya Hotel Gili Trawangan Lombok;9.9;10-07-2016;3
+17;38;Natya Hotel Gili Trawangan Lombok;7.8;07-07-2016;3
+34;38;Natya Hotel Gili Trawangan Lombok;9.8;25-05-2016;3
+15;38;Natya Hotel Gili Trawangan Lombok;9.5;11-05-2016;3
+13;39;Golden Palace Hotel Lombok;8.8;12-07-2019;4
+15;39;Golden Palace Hotel Lombok;7.6;24-06-2019;4
+50;39;Golden Palace Hotel Lombok;8.0;29-01-2019;4
+22;39;Golden Palace Hotel Lombok;10;26-05-2018;4
+40;39;Golden Palace Hotel Lombok;10;14-05-2018;4
+37;39;Golden Palace Hotel Lombok;10;26-05-2018;4
+25;39;Golden Palace Hotel Lombok;10;05-04-2018;4
+37;39;Golden Palace Hotel Lombok;10;27-03-2018;4
+23;39;Golden Palace Hotel Lombok;8.8;22-03-2018;4
+13;39;Golden Palace Hotel Lombok;5.2;22-02-2018;4
+27;39;Golden Palace Hotel Lombok;9.0;24-01-2018;4
+23;39;Golden Palace Hotel Lombok;10;13-01-2018;4
+6;39;Golden Palace Hotel Lombok;10;03-01-2018;4
+49;39;Golden Palace Hotel Lombok;6.1;17-12-2017;4
+11;39;Golden Palace Hotel Lombok;9.7;13-12-2017;4
+35;39;Golden Palace Hotel Lombok;10;17-11-2017;4
+3;39;Golden Palace Hotel Lombok;10;31-10-2017;4
+31;39;Golden Palace Hotel Lombok;9.8;13-11-2016;4
+45;39;Golden Palace Hotel Lombok;7.4;09-10-2016;4
+7;39;Golden Palace Hotel Lombok;8.7;19-07-2016;4
+44;39;Golden Palace Hotel Lombok;9.4;14-06-2016;4
+36;39;Golden Palace Hotel Lombok;8.2;19-10-2015;4
+11;39;Golden Palace Hotel Lombok;7.5;27-09-2015;4
+20;39;Golden Palace Hotel Lombok;7.4;01-04-2015;4
+9;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;8.8;31-05-2016;5
+41;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;7.6;22-05-2016;5
+41;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;9.2;23-04-2016;5
+40;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;5.6;02-02-2016;5
+38;41;Puri Saron Senggigi Beach Resort Lombok;10;08-04-2019;3
+43;41;Puri Saron Senggigi Beach Resort Lombok;6.8;03-01-2019;3
+14;41;Puri Saron Senggigi Beach Resort Lombok;8.8;02-05-2014;3
+31;41;Puri Saron Senggigi Beach Resort Lombok;8.8;02-05-2014;3
+13;41;Puri Saron Senggigi Beach Resort Lombok;8.8;02-05-2014;3
+35;41;Puri Saron Senggigi Beach Resort Lombok;7.6;07-04-2014;3
+18;41;Puri Saron Senggigi Beach Resort Lombok;8.4;23-04-2014;3
+8;41;Puri Saron Senggigi Beach Resort Lombok;8.4;07-04-2014;3
+12;41;Puri Saron Senggigi Beach Resort Lombok;8.8;07-04-2014;3
+18;41;Puri Saron Senggigi Beach Resort Lombok;9.2;07-04-2014;3
+33;42;Melati Cottage Lombok;8.4;19-02-2020;
+8;42;Melati Cottage Lombok;8.0;02-07-2018;
+1;43;Puri Rinjani Bungalows Lombok;10;30-05-2021;3
+28;43;Puri Rinjani Bungalows Lombok;8.4;14-04-2021;3
+13;44;Marc Hotel Gili Trawangan Lombok;8.0;02-07-2018;4
+38;44;Marc Hotel Gili Trawangan Lombok;9.2;19-03-2018;4
+43;44;Marc Hotel Gili Trawangan Lombok;10;07-03-2018;4
+44;44;Marc Hotel Gili Trawangan Lombok;7.6;19-02-2018;4
+11;45;Les Villas Ottalia Gili Meno Lombok;9.2;17-11-2017;3
+27;45;Les Villas Ottalia Gili Meno Lombok;10;12-02-2017;3
+48;46;Mola2 Resort Gili Air Lombok;9.6;07-12-2017;3
+43;47;Hotel Zaitun Selaparang Lombok;9.2;03-01-2020;1
+16;48;Royal Regantris Villa Karang Lombok;9.6;29-06-2017;3
+33;48;Royal Regantris Villa Karang Lombok;10;28-09-2015;3
+7;49;Nirvana Gili Sudak Resort Lombok;2.0;20-03-2022;1
+47;49;Nirvana Gili Sudak Resort Lombok;8.8;06-01-2020;1
+39;49;Nirvana Gili Sudak Resort Lombok;9.2;16-10-2019;1
+45;50;Krisna Bungalow and Restaurant Lombok;6.8;29-01-2022;1
+32;50;Krisna Bungalow and Restaurant Lombok;9.2;02-09-2018;1
+6;50;Krisna Bungalow and Restaurant Lombok;8.0;13-08-2018;1
+38;50;Krisna Bungalow and Restaurant Lombok;8.8;04-01-2018;1
+20;50;Krisna Bungalow and Restaurant Lombok;10;03-01-2018;1
+50;50;Krisna Bungalow and Restaurant Lombok;9.6;12-05-2017;1
+40;50;Krisna Bungalow and Restaurant Lombok;10;27-04-2017;1
+43;51;Segara Anak Lombok;8.4;10-05-2022;3
+35;52;DeKa Homestay Mataram;6.4;26-08-2017;2
+42;52;DeKa Homestay Mataram;10;15-08-2017;2
+23;52;DeKa Homestay Mataram;9.2;05-05-2017;2
+9;52;DeKa Homestay Mataram;9.3;15-08-2017;2
+35;53;Bleu Verde hotel Turtle Point Beach Lombok;9.4;26-08-2017;3
+1;53;Bleu Verde hotel Turtle Point Beach Lombok;9.6;07-05-2018;3
+50;53;Bleu Verde hotel Turtle Point Beach Lombok;9.2;01-04-2018;3
+15;54;Merumatta Senggigi Lombok;8.0;16-06-2021;5
+48;54;Merumatta Senggigi Lombok;10;22-05-2021;5
+38;54;Merumatta Senggigi Lombok;8.8;29-12-2019;5
+36;54;Merumatta Senggigi Lombok;10;18-03-2019;5
+45;54;Merumatta Senggigi Lombok;9.6;05-02-2019;5
+23;54;Merumatta Senggigi Lombok;9.6;02-01-2019;5
+33;54;Merumatta Senggigi Lombok;10;28-06-2018;5
+45;54;Merumatta Senggigi Lombok;8.8;16-04-2018;5
+16;54;Merumatta Senggigi Lombok;8.4;29-10-2017;5
+48;54;Merumatta Senggigi Lombok;9.2;15-02-2017;5
+25;54;Merumatta Senggigi Lombok;9.3;03-01-2017;5
+18;55;Sudamala Resort Senggigi Lombok ;9.2;21-09-2017;5
+43;56;Joje Bungalow Lombok;10;02-01-2019;2
+20;56;Joje Bungalow Lombok;8.8;26-12-2017;2
+33;56;Joje Bungalow Lombok;8.0;30-06-2017;2
+2;56;Joje Bungalow Lombok;6.8;09-05-2017;2
+36;56;Joje Bungalow Lombok;8.0;02-04-2017;2
+12;56;Joje Bungalow Lombok;6.4;30-01-2017;2
+44;57;Pratama Hotel and Convention Lombok;8.4;16-11-2019;3
+19;58;Hotel Lumi Gili Trawangan Lombok;9.2;12-06-2022;4
+24;59;Puri Bunga Beach Cottage Lombok;4.0;25-01-2020;3
+40;59;Puri Bunga Beach Cottage Lombok;9.2;25-04-2018;3
+20;59;Puri Bunga Beach Cottage Lombok;9.3;16-11-2019;3
+33;59;Puri Bunga Beach Cottage Lombok;5.2;14-03-2018;3
+14;59;Puri Bunga Beach Cottage Lombok;9.1;19-02-2018;3
+24;59;Puri Bunga Beach Cottage Lombok;9.2;20-02-2018;3
+16;59;Puri Bunga Beach Cottage Lombok;10;28-03-2017;3
+48;59;Puri Bunga Beach Cottage Lombok;8.0;15-04-2016;3
+45;59;Puri Bunga Beach Cottage Lombok;8.1;20-02-2018;3
+32;59;Puri Bunga Beach Cottage Lombok;9.2;13-02-2016;3
+42;60;Panda Hostel Lombok;8.0;24-06-2018;3
+43;60;Panda Hostel Lombok;8.0;17-05-2017;3
+12;61;Sari Gili Bungalow Lombok;10;07-05-2022;4
+42;61;Sari Gili Bungalow Lombok;9.6;24-07-2019;4
+3;61;Sari Gili Bungalow Lombok;8.4;18-02-2019;4
+6;62;Intan Inn Hostel Lombok;8.8;09-01-2020;1
+2;62;Intan Inn Hostel Lombok;5.6;15-11-2019;1
+43;62;Intan Inn Hostel Lombok;8.0;06-11-2019;1
+27;62;Intan Inn Hostel Lombok;8.8;24-07-2019;1
+16;63;Coral Beach 2 Bungalow Lombok;7.6;11-02-2018;3
+28;63;Coral Beach 2 Bungalow Lombok;7.7;28-03-2017;3
+26;63;Coral Beach 2 Bungalow Lombok;8.4;09-04-2016;3
+26;63;Coral Beach 2 Bungalow Lombok;8.0;11-03-2016;3
+14;63;Coral Beach 2 Bungalow Lombok;7.2;19-08-2015;3
+45;64;Nutana Hotel Lombok;7.5;11-03-2016;3
+17;64;Nutana Hotel Lombok;7.6;06-12-2019;3
+22;64;Nutana Hotel Lombok;10;18-11-2019;3
+45;64;Nutana Hotel Lombok;2.0;24-09-2019;3
+14;64;Nutana Hotel Lombok;9.2;30-01-2019;3
+36;64;Nutana Hotel Lombok;8.4;30-03-2018;3
+49;64;Nutana Hotel Lombok;10;19-02-2018;3
+40;64;Nutana Hotel Lombok;8.4;21-11-2017;3
+34;64;Nutana Hotel Lombok;8.4;04-09-2017;3
+5;64;Nutana Hotel Lombok;6.0;11-08-2017;3
+43;64;Nutana Hotel Lombok;10;03-07-2017;3
+13;65;Cozy Cottages Lombok;8.4;30-05-2021;3
+7;66;Pondok Santi Estate Lombok;9.2;23-04-2022;4
