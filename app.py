@@ -136,4 +136,4 @@ elif option == 'Recommendation':
         st.success(recommended_hotel)
         
         st.write("""Dengan Nilai Hitrate : """)
-        st.success(Hitrate)
+        st.success(Hitrate) 
