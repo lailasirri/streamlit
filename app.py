@@ -34,6 +34,20 @@ elif option == 'Recommendation':
     st.write("""## Hotel Recommendation""") #menampilkan judul halaman similarity
 
     st.title('Get Your Preferred Hotel !')
+    
+    # Register form
+    st.title('User Registration')
+
+    name = st.text_input('Name')
+    email = st.text_input('Email')
+    password = st.text_input('Password', type='password')
+
+    if st.button('Register'):
+    # Save user data to a json file
+        user = {"name": name, "email": email, "password": password}
+        with open('users.json', 'a') as file:
+            json.dump(user, file)
+            st.success('You have successfully registered.')
 
     ratings=pd.read_csv('datafix.csv', sep=';')
     # Keep the hotels with over 1 ratings
