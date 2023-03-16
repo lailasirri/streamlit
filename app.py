@@ -81,14 +81,8 @@ picked_hotel = namahotel
 # Similarity score hotels
 picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={picked_hotel:'similarity_score'})
 n = 10
-picked_userid_rating_similarity = pd.merge(left=picked_userid_rating, 
-                                            right=picked_hotel_similarity_score, 
-                                            on='namahotel', 
-                                            how='inner')\
-                                     .sort_values('similarity_score', ascending=False)[:10]
-predicted_rating = round(np.average(picked_userid_rating_similarity['rating'], 
-                            weights=picked_userid_rating_similarity['similarity_score']), 6)
-print(f'The predicted rating for {picked_hotel} by user {userId} is {predicted_rating}' )
+predicted_rating = round(np.average(picked_userid_rating_similarity['similarity_score']), 6)
+print(f'The predicted rating for {picked_hotel} is {predicted_rating}' )
 
 # Item-based recommendation function
 def item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommendations=5):
