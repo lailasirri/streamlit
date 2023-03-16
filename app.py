@@ -96,11 +96,11 @@ elif option == 'Recommendation':
         # Item-based recommendation function
         def item_based_rec(picked_userid, number_of_similar_items=5, number_of_recommendations =5):
   # Hotels that the target user has not rated
-  picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
-  picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[picked_userid]==True]['namahotel'].values.tolist()
+    picked_userid_unrating = pd.DataFrame(matrix_norm[picked_userid].isna()).reset_index()
+    picked_userid_unrating = picked_userid_unrating[picked_userid_unrating[picked_userid]==True]['namahotel'].values.tolist()
   
   # Hotels that the target user has rated
-  picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')\
+    picked_userid_rating = pd.DataFrame(matrix_norm[picked_userid].dropna(axis=0, how='all')\
                             .sort_values(ascending=False))\
                             .reset_index()\
                             .rename(columns={7:'rating'})
