@@ -93,36 +93,41 @@ elif option == 'Recommendation':
         print(f'The predicted rating for {picked_hotel} by user {picked_userid} is {predicted_rating}' )
         
 # Item-based recommendation function
-def item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommendations =5):
+def item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommendations=5):
     import operator
-    # Hotels that the target user has not rated
-    unrated_hotels = pd.DataFrame(matrix_norm.isna()[picked_hotel]).reset_index()
-    unrated_hotels = unrated_hotels[unrated_hotels[picked_hotel]==True]['namahotel'].values.tolist()
+    # Hotels that the target user has not rating
+    picked_hotel_unrated = pd.DataFrame(matrix_norm.loc[picked_hotel].isna()).reset_index()
+    picked_hotel_unrated = picked_hotel_unrated[picked_hotel_unrated[picked_hotel]==True]['namahotel'].values.tolist()
     # Hotels that the target user has rated
-    user_ratings = pd.DataFrame(matrix_norm[picked_hotel].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_hotel:'rating'})
-    # Check if the user has rated any hotels
-    if user_ratings.empty:
-        # If the user has not rated any hotels, recommend the most popular hotels
+    picked_hotel_rating = pd.DataFrame(matrix_norm.loc[picked_hotel].dropna(axis=0, how='all').sort_values(ascending=False)).reset_index().rename(columns={picked_hotel:'rating'})
+    # Check if the hotel has been rated
+    if picked_hotel_rating.empty:
+        # If the hotel has not been rated, recommend the most popular hotels
         most_popular_hotels = matrix_norm.mean(axis=1).sort_values(ascending=False).index.tolist()
         return most_popular_hotels[:number_of_recommendations]
     # Dictionary to save the unrated hotel and predicted rating pair
-    rating_prediction ={}  
-    # Loop through unrated hotels          
-    for unrated_hotel in unrated_hotels: 
+    rating_prediction = {}  
+    # Loop through unrated hotels
+    for hotel in picked_hotel_unrated: 
         # Calculate the similarity score of the picked hotel with other hotels
-        hotel_similarity_score = item_similarity[[unrated_hotel]].reset_index().rename(columns={unrated_hotel:'similarity_score'})
-        # Rank the similarities between the user rating hotel and the unrated hotel
-        user_ratings_similarity = pd.merge(left=user_ratings, right=hotel_similarity_score, on='namahotel', how='inner')\
+        hotel_similarity_score = item_similarity[[hotel]].reset_index().rename(columns={hotel:'similarity_score'})
+        # Rank the similarities between the picked user rating hotel and the picked unrated hotel.
+        picked_hotel_rating_similarity = pd.merge(left=picked_hotel_rating, 
+                                                  right=hotel_similarity_score, 
+                                                  on='namahotel', 
+                                                  how='inner')\
                                           .sort_values('similarity_score', ascending=False)[:number_of_similar_items]
+        
         # Calculate the predicted rating using weighted average of similarity scores and the ratings from user 
-        predicted_rating = round(np.average(user_ratings_similarity['rating'], weights=user_ratings_similarity['similarity_score']), 6)
+        predicted_rating = round(np.average(picked_hotel_rating_similarity['rating'], 
+                                             weights=picked_hotel_rating_similarity['similarity_score']), 6)
         # Save the predicted rating in the dictionary
-        rating_prediction[unrated_hotel] = predicted_rating
+        rating_prediction[hotel] = predicted_rating
     # Remove entries with NaN values
     rating_prediction = {k: v for k, v in rating_prediction.items() if not math.isnan(v)}
-    # Return the top recommended hotels
+    # Return the top recommended movies
     return sorted(rating_prediction.items(), key=operator.itemgetter(1), reverse=True)[:number_of_recommendations]
-    
+
 # Get recommendations
 recommended_hotels = item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommendations=10)
 st.success(recommended_hotels)
