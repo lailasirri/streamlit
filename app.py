@@ -54,7 +54,6 @@ elif option == 'Recommendation':
     picked_userid = userId
     picked_hotel = namahotel
  
-    userId = st.number_input('Enter user ID',0)
     namahotel = st.text_input('Enter nama hotel')
    
 
