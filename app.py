@@ -128,5 +128,4 @@ def item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommenda
     return sorted(rating_prediction.items(), key=operator.itemgetter(1))
     # Get recommendations
     recommended_hotel = item_based_rec(picked_hotel, number_of_similar_items=5, number_of_recommendations =10)
-
-        st.table(recommended_hotel)
+    st.table(recommended_hotel)
