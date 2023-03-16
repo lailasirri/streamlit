@@ -138,4 +138,4 @@ elif option == 'Recommendation':
         Jumlah_rekomendasi_benar = len(recommended_hotel)
         Jumlah_total_rekomemdasi = number_of_recommendations=10
         Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
-        st.success(recommended_hotel)
+        st.success(recommended_hotels)
