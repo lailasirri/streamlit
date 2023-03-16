@@ -133,7 +133,7 @@ elif option == 'Recommendation':
             # Sort the predicted ratings in descending order
               sorted_predictions = sorted(rating_prediction.items(), key=lambda x: x[1], reverse=True)
         # Get recommendations
-        recommended_hotel = item_based_rec(picked_userid, picked_hotel, number_of_similar_items=5, number_of_recommendations =10)
+        recommended_hotels = [hotel[0] for hotel in sorted_predictions][:number_of_recommendations]
         Jumlah_rekomendasi_benar = len(recommended_hotel)
         Jumlah_total_rekomemdasi = number_of_recommendations=10
         Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
