@@ -134,7 +134,6 @@ elif option == 'Recommendation':
               sorted_predictions = sorted(rating_prediction.items(), key=lambda x: x[1], reverse=True)
         # Get recommendations
         recommended_hotels = [hotel[0] for hotel in sorted_predictions][:number_of_recommendations]
-        return recommended_hotels
         Jumlah_rekomendasi_benar = len(recommended_hotel)
         Jumlah_total_rekomemdasi = number_of_recommendations=10
         Hitrate = (Jumlah_rekomendasi_benar/Jumlah_total_rekomemdasi)
