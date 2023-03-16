@@ -127,8 +127,7 @@ elif option == 'Recommendation':
              # Remove entries with NaN values
               rating_prediction = {k: v for k, v in rating_prediction.items() if not math.isnan(v)}
              # Return the top recommended movies
-             if len(rating_prediction) == 0:
-               most_popular_hotels = agg_ratings.sort_values(by='number_of_ratings', ascending=False)['namahotel'].values.tolist()
+             if len(rating_prediction) == 0:most_popular_hotels = agg_ratings.sort_values(by='number_of_ratings', ascending=False)['namahotel'].values.tolist()
                return most_popular_hotels[:number_of_recommendations]
             # Sort the predicted ratings in descending order
                sorted_predictions = sorted(rating_prediction.items(), key=lambda x: x[1], reverse=True)
