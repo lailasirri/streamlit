@@ -88,9 +88,9 @@ elif option == 'Recommendation':
         # Rank the similarities between the hotels and the picked hotel.
         n=10
         picked_hotel_similarity = pd.merge(left=agg_ratings[['namahotel']], 
-                                            right=picked_hotel_similarity_score, 
-                                            on='namahotel', 
-                                            how='inner')\
+                                           right=picked_hotel_similarity_score, 
+                                           on='namahotel', 
+                                           how='inner')\
                                     .sort_values('similarity_score', ascending=False)[:n]
 
         # Take a look at the hotels with highest similarity
