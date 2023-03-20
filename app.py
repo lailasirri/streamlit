@@ -27,7 +27,7 @@ elif option == 'Dataframe':
 
 elif option == 'Hotels':
     st.write("""## List of Hotels in Lombok """) #menampilkan judul halaman similarity
-    Namahotel=pd.read_csv('datahotelfix.csv', sep=';')
+    Namahotel=pd.read_csv('datahotelbintang.csv', sep=';')
     Namahotel
     
 elif option == 'Recommendation':
