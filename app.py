@@ -59,41 +59,41 @@ elif option == 'Recommendation':
 
     if st.button('View Recommendation Result'):
 
-        ratings=pd.read_csv('datafix.csv', sep=';')
-        # Aggregate by hotel
-        agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
+            ratings=pd.read_csv('datafix.csv', sep=';')
+            # Aggregate by hotel
+            agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
 
-        # Check popular hotels
-        agg_ratings.sort_values(by='number_of_ratings', ascending=False)
+            # Check popular hotels
+            agg_ratings.sort_values(by='number_of_ratings', ascending=False)
 
-        # Merge data
-        df_2 = pd.merge(ratings, agg_ratings[['namahotel']], on='namahotel', how='inner')
-        df_2.info()
+            # Merge data
+            df_2 = pd.merge(ratings, agg_ratings[['namahotel']], on='namahotel', how='inner')
+            df_2.info()
 
-        # Create user-item matrix
-        matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
+            # Create user-item matrix
+            matrix = df_2.pivot_table(index='namahotel', columns='userId', values='rating')
 
-        # Normalize user-item matrix
-        matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
+            # Normalize user-item matrix
+            matrix_norm = matrix.subtract(matrix.mean(axis=1), axis = 0)
 
-        # Item similarity matrix using Pearson correlation
-        item_similarity = matrix_norm.T.corr()
+            # Item similarity matrix using Pearson correlation
+            item_similarity = matrix_norm.T.corr()
 
-        # Pick a hotel
-        picked_hotel = namahotel
+            # Pick a hotel
+            picked_hotel = namahotel
 
-        # Similarity score of the hotel with all the other hotels
-        picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
+            # Similarity score of the hotel with all the other hotels
+            picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
 
-        # Rank the similarities between the hotels and the picked hotel.
-        n=10
-        picked_hotel_similarity = pd.merge(left=agg_ratings[['namahotel']], 
-                                           right=picked_hotel_similarity_score, 
-                                           on='namahotel', 
-                                           how='inner')\
-                                    .sort_values('similarity_score', ascending=False)[:n]
+            # Rank the similarities between the hotels and the picked hotel.
+            n=10
+            picked_hotel_similarity = pd.merge(left=agg_ratings[['namahotel']], 
+                                                right=picked_hotel_similarity_score, 
+                                                on='namahotel', 
+                                                how='inner')\
+                                        .sort_values('similarity_score', ascending=False)[:n]
 
-        # Take a look at the hotels with highest similarity
-        picked_hotel_similarity[['namahotel','similarity_score']]
+            # Take a look at the hotels with highest similarity
+            picked_hotel_similarity[['namahotel','similarity_score']]
 
-        st.table(picked_hotel_similarity)
+            st.table(picked_hotel_similarity)
