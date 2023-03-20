@@ -83,7 +83,7 @@ elif option == 'Recommendation':
             picked_hotel = namahotel
 
             # Similarity score of the hotel with all the other hotels
-            picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'namahotel':'similarity_score'})
+            picked_hotel_similarity_score = item_similarity[[picked_hotel]].reset_index().rename(columns={'ASTON Inn Mataram':'similarity_score'})
 
             # Rank the similarities between the hotels and the picked hotel.
             n=10
