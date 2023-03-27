@@ -35,7 +35,7 @@ elif option == 'Recommendation':
 
     st.title('Get Your Preferred Hotel !')
 
-    ratings=pd.read_csv('datafix.csv', sep=';')
+    ratings=pd.read_csv('ap.csv', sep=';')
     # Aggregate by hotel
     agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
 
@@ -59,7 +59,7 @@ elif option == 'Recommendation':
 
     if st.button('View Recommendation Result'):
 
-            ratings=pd.read_csv('datafix.csv', sep=';')
+            ratings=pd.read_csv('apa.csv', sep=';')
             # Aggregate by hotel
             agg_ratings = ratings.groupby('namahotel').agg(mean_rating = ('rating', 'mean'), number_of_ratings = ('rating', 'count')).reset_index()
 
