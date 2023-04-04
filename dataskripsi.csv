@@ -1,0 +1,628 @@
+﻿userId;hotelId;namahotel;namauser;rating;tanggal;bintang
+1;3;Favehotel Langko;Karina Ditya Putri ;10;25/12/17;3
+2;2;ASTON Sunset Beach Resort Gili Trawangan ;Yuli ;10;26/12/17;4
+3;28;Lombok Astoria Mataram;Dodi ;10;26/12/17;4
+4;36;Jayakarta Hotel Lombok;Suwantri Gani ;09.02;26/12/17;4
+5;38;Natya Hotel Gili Trawangan Lombok;Agus Santoso ;10;26/12/17;3
+6;56;Joje Bungalow Lombok;Faried Hastomi ;08.08;26/12/17;2
+7;26;Hotel Palapa Mataram;Achwan Pratama Putra ;08.00;27/12/17;1
+8;23;Aruna Senggigi Resort ;Zulmandikari Wijaya ;09.06;28/12/17;4
+9;25;Kebun Villas and Resort Lombok;D D ;09.02;28/12/17;4
+10;6;Lombok Plaza Hotel dan Convention Cakranegara;Erika Ambarita ;08.08;31/12/17;3
+11;21;M Hotel Lombok;I Made Dwi Gusta Imbara ;09.08;29/01/17;2
+12;2;ASTON Sunset Beach Resort Gili Trawangan ;Rama ;09.07;30/01/17;4
+13;3;Favehotel Langko;Hendra ;08.04;30/01/17;3
+14;56;Joje Bungalow Lombok;Isnani Zain ;06.04;30/01/17;2
+15;3;Favehotel Langko;Dwi  ;06.06;03/02/17;3
+16;13;Lombok Garden Hotel Lombok;Fiola ;06.09;05/02/17;3
+17;3;Favehotel Langko;Ridfu ;10;08/02/17;3
+18;1;ASTON Inn Mataram;Andre H ;09.00;11/02/17;3
+19;45;Les Villas Ottalia Gili Meno Lombok;Eggie Rizky Gunawan ;10;12/02/17;3
+20;54;Merumatta Senggigi Lombok;Ibnu Jarir ;09.02;15/02/17;5
+21;36;Jayakarta Hotel Lombok;Eka Susanti ;10;19/02/17;4
+22;28;Lombok Astoria Mataram;Daniel H.p. Panggabean ;06.06;20/02/17;4
+23;28;Lombok Astoria Mataram;Altriara ;09.01;20/02/17;4
+24;38;Natya Hotel Gili Trawangan Lombok;Wiwin Nurcholifah ;06.04;20/02/17;3
+25;28;Lombok Astoria Mataram;Ferdi Gustam ;09.09;21/02/17;4
+26;28;Lombok Astoria Mataram;Willy Wibowo ;09.02;23/02/17;4
+27;1;ASTON Inn Mataram;Erwin Dwi Laksana ;10;25/02/17;3
+28;25;Kebun Villas and Resort Lombok;Ni Luh Eka Yulianti ;09.02;27/02/17;4
+29;32;Svarga Resort Lombok;Triaji Hutomo ;10;27/02/17;4
+30;1;ASTON Inn Mataram;Sutriyatmi ;08.04;02/03/17;3
+31;2;ASTON Sunset Beach Resort Gili Trawangan ;Hendra ;09.08;02/03/17;4
+32;1;ASTON Inn Mataram;Heri Ruslan ;09.08;06/03/17;3
+33;3;Favehotel Langko;Mahmudin ;06.05;06/03/17;3
+34;32;Svarga Resort Lombok;Elysa Novita Ningsih ;09.06;08/03/17;4
+35;28;Lombok Astoria Mataram;Rizky Eka Saputra ;09.09;20/03/17;4
+36;31;Lombok Raya Hotel;Eka ;10;24/03/17;4
+37;59;Puri Bunga Beach Cottage Lombok;Ethy ;10;28/03/17;3
+38;63;Coral Beach 2 Bungalow Lombok;MS;07.07;28/03/17;3
+39;3;Favehotel Langko;Dedi Jatnika Apriadi ;09.08;29/03/17;3
+40;6;Lombok Plaza Hotel dan Convention Cakranegara;Novieta ;10;29/03/17;3
+1;38;Natya Hotel Gili Trawangan Lombok;Antok Priyatno ;10;17/12/18;3
+2;2;ASTON Sunset Beach Resort Gili Trawangan ;Amita Mitha ;09.02;23/12/18;4
+3;13;Lombok Garden Hotel Lombok;Ihya Ghazali ;05.06;26/12/18;3
+4;33;Montana Premier Senggigi Lombok;Faisal Rizani Said ;08.00;26/12/18;4
+5;61;Sari Gili Bungalow Lombok;Fidiya  ;08.04;18/02/19;4
+6;9;Idoop Hotel Lombok;Sarah ;09.06;08/03/19;3
+7;35;Hastina Hotel Lombok;Iin ;10;11/03/19;
+8;3;Favehotel Langko;Fredy Herminto ;10;16/03/19;3
+9;54;Merumatta Senggigi Lombok;Rendi Kurniadi ;10;18/03/19;5
+10;3;Favehotel Langko;Wisnoe Hartono ;09.06;25/03/19;3
+11;28;Lombok Astoria Mataram;Yessi Raraswati ;09.06;08/04/19;4
+12;41;Puri Saron Senggigi Beach Resort Lombok;Luh Made Susantiningsih ;10;08/04/19;3
+13;28;Lombok Astoria Mataram;Frendy Karmana ;08.08;10/04/19;4
+14;16;Grand Madani Hotel Syariah Lombok;Nadia Oktinova ;08.00;28/04/19;3
+15;21;M Hotel Lombok;Petrus Jeffrey Sjarif ;08.04;28/04/19;2
+16;37;Pandora Hotel Lombok;Pande Komang Suparyana ;10;03/06/19;2
+17;24;Katamaran Hotel dan Resort Lombok;Livia Yosetya ;09.02;06/06/19;5
+18;39;Golden Palace Hotel Lombok;Ruli Sartika Sari ;07.06;24/06/19;4
+19;2;ASTON Sunset Beach Resort Gili Trawangan ;Dian Permata Sari ;10;26/06/19;4
+20;2;ASTON Sunset Beach Resort Gili Trawangan ;Isti Febriaty ;09.06;30/06/19;4
+21;16;Grand Madani Hotel Syariah Lombok;Isti Febriaty ;10;02/07/19;3
+22;31;Lombok Raya Hotel;Tian Yosis Tallo ;10;03/07/19;4
+23;17;Santika Mataram Lombok;Adrianus Dicky Kristanto ;10;09/07/19;3
+24;39;Golden Palace Hotel Lombok;Hendra Wiguna ;08.08;12/07/19;4
+25;61;Sari Gili Bungalow Lombok;Yeheskel ;09.06;24/07/19;4
+26;62;Intan Inn Hostel Lombok;Yhskl ;08.08;24/07/19;1
+27;15;Central Inn Senggigi Lombok;Rafika Fitri Qonita ;07.06;18/08/19;3
+28;15;Central Inn Senggigi Lombok;Indah Budi Ratnawati ;10;19/08/19;3
+29;12;Holiday Resort Lombok;Aulia Rahma ;09.02;27/08/19;4
+30;16;Grand Madani Hotel Syariah Lombok;Intana ;10;27/08/19;3
+31;10;RedDoorz near Mataram University Lombok;Danar Adesta ;08.08;07/09/19;2
+32;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Fitria Sari ;10;10/09/19;5
+33;21;M Hotel Lombok;Maylanichindi Lestari Ayu ;10;10/09/19;2
+34;27;Citilike Hotel Lombok;Roy Adiputra ;09.02;13/09/19;3
+35;28;Lombok Astoria Mataram;Misliha ;08.08;13/09/19;4
+36;10;RedDoorz near Mataram University Lombok;Chriest Paranta ;09.06;14/09/19;2
+37;64;Nutana Hotel Lombok;Faruq Ratuhaji ;02.00;24/09/19;3
+38;37;Pandora Hotel Lombok;Fendhy ;09.06;28/09/19;2
+39;10;RedDoorz near Mataram University Lombok;Andy Waumans ;10;04/10/19;2
+40;10;RedDoorz near Mataram University Lombok;Andy Waumans ;10;07/10/19;2
+1;45;Les Villas Ottalia Gili Meno Lombok;Dewi Ratna ;09.02;17/11/17;3
+2;16;Grand Madani Hotel Syariah Lombok;Dina ;10;19/11/17;3
+3;4;Gili Bagaz Cottages Lombok;Haris Farhan ;09.06;21/11/17;2
+4;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Ibrahim ;08.02;21/11/17;3
+5;64;Nutana Hotel Lombok;Haris Farhan ;08.04;21/11/17;3
+6;6;Lombok Plaza Hotel dan Convention Cakranegara;Hendry Tanaya ;09.02;23/11/17;3
+7;3;Favehotel Langko;Rani Tasia ;08.02;27/11/17;3
+8;6;Lombok Plaza Hotel dan Convention Cakranegara;Wahyu Akbar ;10;28/11/17;3
+9;32;Svarga Resort Lombok;Herlinda Fitria ;09.06;28/11/17;4
+10;12;Holiday Resort Lombok;Yessy Yuliaputri ;08.08;03/12/17;4
+11;28;Lombok Astoria Mataram;Ajeng ;10;03/12/17;4
+12;46;Mola2 Resort Gili Air Lombok;Indriyani ;09.06;07/12/17;3
+13;6;Lombok Plaza Hotel dan Convention Cakranegara;Ellisa ;10;08/12/17;3
+14;14;Gili Sands Beach Club Lombok;Nurul Wahyuni ;08.04;08/12/17;3
+15;31;Lombok Raya Hotel;M Reval Aji P ;10;11/12/17;4
+16;39;Golden Palace Hotel Lombok;Johannes Peter ;09.07;13/12/17;4
+17;17;Santika Mataram Lombok;Fitri Ningsih ;10;17/12/17;3
+18;39;Golden Palace Hotel Lombok;Roni Hariono ;06.01;17/12/17;4
+19;23;Aruna Senggigi Resort ;Rezeki Amelia ;09.02;18/12/17;4
+20;28;Lombok Astoria Mataram;Malik Achmad Aljabar ;10;18/12/17;4
+21;31;Lombok Raya Hotel;Susanto Houtama ;07.02;18/12/17;4
+22;16;Grand Madani Hotel Syariah Lombok;Surya ;09.06;20/12/17;3
+23;25;Kebun Villas and Resort Lombok;Asep Dindin ;08.00;24/12/17;4
+24;28;Lombok Astoria Mataram;Baharuddin  ;09.04;24/12/17;4
+25;3;Favehotel Langko;Chairiadi ;08.02;01/01/18;3
+26;28;Lombok Astoria Mataram;Husni ;08.05;01/01/18;4
+27;3;Favehotel Langko;Guntor ;08.05;02/01/18;3
+28;13;Lombok Garden Hotel Lombok;Lalu Sukuriatna ;07.02;02/01/18;3
+29;32;Svarga Resort Lombok;Anindita Riesta Apsari ;08.08;02/01/18;4
+30;1;ASTON Inn Mataram;Randi Hermawan ;10;03/01/18;3
+31;2;ASTON Sunset Beach Resort Gili Trawangan ;Khoiru ;07.09;03/01/18;4
+32;28;Lombok Astoria Mataram;Albert Wisnu Budiman ;09.07;03/01/18;4
+33;39;Golden Palace Hotel Lombok;Sabrina Yohansari ;10;03/01/18;4
+34;50;Krisna Bungalow and Restaurant Lombok;Dewi ;10;03/01/18;1
+35;1;ASTON Inn Mataram;Charles ;10;04/01/18;3
+36;3;Favehotel Langko;Sri Utami ;08.07;04/01/18;3
+37;50;Krisna Bungalow and Restaurant Lombok;Moh Ulul Hanafi ;08.08;04/01/18;1
+38;38;Natya Hotel Gili Trawangan Lombok;Angga Prima ;10;09/01/18;3
+39;3;Favehotel Langko;Dhiena ;10;11/01/18;3
+40;3;Favehotel Langko;Mala ;07.07;11/01/18;3
+1;39;Golden Palace Hotel Lombok;Sulistio ;09.08;13/11/16;4
+2;36;Jayakarta Hotel Lombok;Vicky ;09.06;19/11/16;4
+3;32;Svarga Resort Lombok;Heni ;07.00;21/11/16;4
+4;9;Idoop Hotel Lombok;Anchilla Stefani Kuswara ;09.06;13/12/16;3
+5;1;ASTON Inn Mataram;Dania Nindya Hapsari ;10;14/12/16;3
+6;12;Holiday Resort Lombok;Andi ;09.02;14/12/16;4
+7;38;Natya Hotel Gili Trawangan Lombok;Wahyu Agam ;08.04;16/12/16;3
+8;1;ASTON Inn Mataram;Yuda ;07.08;17/12/16;3
+9;6;Lombok Plaza Hotel dan Convention Cakranegara;Egiana Triaji ;06.06;17/12/16;3
+10;1;ASTON Inn Mataram;Fuad Jaya Miharja ;09.06;19/12/16;3
+11;2;ASTON Sunset Beach Resort Gili Trawangan ;Mhs ;08.03;22/12/16;4
+12;32;Svarga Resort Lombok;Wyoga Darmawan ;08.00;23/12/16;4
+13;32;Svarga Resort Lombok;Heru Kusuma Kurniawan ;10;23/12/16;4
+14;1;ASTON Inn Mataram;Thawfiqa ;07.09;24/12/16;3
+15;3;Favehotel Langko;Sago Ali Akbar ;09.09;25/12/16;3
+16;21;M Hotel Lombok;Tini ;09.04;26/12/16;2
+17;13;Lombok Garden Hotel Lombok;Ariaty Susanti ;05.04;27/12/16;3
+18;21;M Hotel Lombok;Agung ;07.02;27/12/16;2
+19;21;M Hotel Lombok;Febry Dwianto ;08.04;29/12/16;2
+20;31;Lombok Raya Hotel;Jimmy Sutandio ;06.04;30/12/16;4
+21;36;Jayakarta Hotel Lombok;Endah Iswantie ;06.08;01/03/15;4
+22;2;ASTON Sunset Beach Resort Gili Trawangan ;Aristyo Gumilar ;08.04;19/03/15;4
+23;39;Golden Palace Hotel Lombok;Roni C. R. ;07.04;01/04/15;4
+24;3;Favehotel Langko;Dewi Rosiani ;06.05;27/04/15;3
+25;3;Favehotel Langko;Jhonni ;08.02;23/05/15;3
+26;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Triono Suprianto ;08.02;23/05/15;3
+27;9;Idoop Hotel Lombok;Dyah ;07.08;17/06/15;3
+28;9;Idoop Hotel Lombok;Andy Haryono ;07.06;16/07/15;3
+29;9;Idoop Hotel Lombok;Ni Wayan Arie Widyasari ;06.09;04/08/15;3
+30;3;Favehotel Langko;Hidayat Fathoni ;08.04;12/08/15;3
+31;9;Idoop Hotel Lombok;Sandro Lubis ;09.00;18/08/15;3
+32;3;Favehotel Langko;Jarukhi ;10;19/08/15;3
+33;4;Gili Bagaz Cottages Lombok;Jeffry ;07.07;19/08/15;2
+34;63;Coral Beach 2 Bungalow Lombok;Kris ;07.02;19/08/15;3
+35;9;Idoop Hotel Lombok;Syam ;10;27/08/15;3
+36;31;Lombok Raya Hotel;Fredy ;08.02;30/08/15;4
+37;39;Golden Palace Hotel Lombok;Ajeng ;07.05;27/09/15;4
+38;48;Royal Regantris Villa Karang Lombok;Elsha Hudaya ;10;28/09/15;3
+39;3;Favehotel Langko;Budi Yuwono ;08.08;29/09/15;3
+40;3;Favehotel Langko;Indra Gunawan ;07.04;04/10/15;3
+1;1;ASTON Inn Mataram;Sanchia Clarissa ;08.06;04/09/17;3
+2;3;Favehotel Langko;Harapan ;09.05;04/09/17;3
+3;26;Hotel Palapa Mataram;Ki Joko Bodo ;09.02;04/09/17;1
+4;64;Nutana Hotel Lombok;Ika Listya ;08.04;04/09/17;3
+5;28;Lombok Astoria Mataram;Dian ;10;06/09/17;4
+6;21;M Hotel Lombok;Retno Kusumaningtyas ;09.02;09/09/17;2
+7;32;Svarga Resort Lombok;Winarto ;09.02;13/09/17;4
+8;3;Favehotel Langko;Rivanda Lubis ;09.02;16/09/17;3
+9;36;Jayakarta Hotel Lombok;Tanti Soenardi ;10;18/09/17;4
+10;55;Sudamala Resort Senggigi Lombok ;Marvella Angga Gunawan ;09.02;21/09/17;5
+11;25;Kebun Villas and Resort Lombok;Agatha ;08.08;04/05/17;4
+12;13;Lombok Garden Hotel Lombok;Budi Yuniawan ;08.04;05/05/17;3
+13;38;Natya Hotel Gili Trawangan Lombok;Ade ;07.09;05/05/17;3
+14;52;DeKa Homestay Mataram;Tati ;09.02;05/05/17;2
+15;56;Joje Bungalow Lombok;Palupi Pangestiningtyas ;06.08;09/05/17;2
+16;50;Krisna Bungalow and Restaurant Lombok;Al Mini ;09.06;12/05/17;1
+17;1;ASTON Inn Mataram;Hendra Fandi Cipto ;10;14/05/17;3
+18;23;Aruna Senggigi Resort ;Ainy Syerlina ;08.03;15/05/17;4
+19;60;Panda Hostel Lombok;Andry ;08.00;17/05/17;3
+20;13;Lombok Garden Hotel Lombok;Nani Nidayah  ;09.09;19/05/17;3
+21;28;Lombok Astoria Mataram;Eko Choirul ;09.01;26/05/17;4
+22;38;Natya Hotel Gili Trawangan Lombok;Lisa Permatasari ;10;26/05/17;3
+23;1;ASTON Inn Mataram;Reza Sarkasih ;10;29/05/17;3
+24;6;Lombok Plaza Hotel dan Convention Cakranegara;Nanik Anggraini ;06.08;29/05/17;3
+25;11;Anema Wellnes Resort Gili Lombok;Dase ;08.08;09/06/17;5
+26;28;Lombok Astoria Mataram;Sinta  ;10;16/06/17;4
+27;1;ASTON Inn Mataram;Alif Shirot Sasmita ;08.08;20/06/17;3
+28;26;Hotel Palapa Mataram;Guest ;07.02;28/06/17;1
+29;36;Jayakarta Hotel Lombok;Charles Leonard Suryanata ;10;28/06/17;4
+30;3;Favehotel Langko;Agus Eka ;08.04;29/06/17;3
+31;23;Aruna Senggigi Resort ;Hendri Tjipta  ;08.04;29/06/17;4
+32;23;Aruna Senggigi Resort ;Hendri Tjipta  ;08.04;29/06/17;4
+33;31;Lombok Raya Hotel;Gatut S ;06.00;29/06/17;4
+34;48;Royal Regantris Villa Karang Lombok;Minica ;09.06;29/06/17;3
+35;24;Katamaran Hotel dan Resort Lombok;Pramudika  ;08.00;30/06/17;5
+36;56;Joje Bungalow Lombok;Yanes K Tarigan ;08.00;30/06/17;2
+37;28;Lombok Astoria Mataram;Oki Wibowo ;10;01/07/17;4
+38;28;Lombok Astoria Mataram;Dhea Cellynia ;10;01/07/17;4
+39;28;Lombok Astoria Mataram;Usman ;10;01/07/17;4
+40;28;Lombok Astoria Mataram;Hendra Gunawan ;08.04;01/07/17;4
+1;2;ASTON Sunset Beach Resort Gili Trawangan ;Thawfiqa ;09.03;23/12/19;4
+2;10;RedDoorz near Mataram University Lombok;Ayu ;10;24/12/19;2
+3;6;Lombok Plaza Hotel dan Convention Cakranegara;Arena Dwi Guna ;08.08;26/12/19;3
+4;29;Sheraton Senggigi Beach Resort;Fredy Tjahja ;09.06;26/12/19;5
+5;54;Merumatta Senggigi Lombok;Hendri Sitompul ;09.06;02/01/19;5
+6;56;Joje Bungalow Lombok;Zulfa Yuniar ;10;02/01/19;2
+7;41;Puri Saron Senggigi Beach Resort Lombok;Mikhael Andhika ;06.08;03/01/19;3
+8;9;Idoop Hotel Lombok;Hendra Wijono ;09.02;12/01/19;3
+9;39;Golden Palace Hotel Lombok;Misliha ;08.00;29/01/19;4
+10;64;Nutana Hotel Lombok;Ossa Rosian ;09.02;30/01/19;3
+11;21;M Hotel Lombok;Rachmat Fabian ;08.00;31/01/19;2
+12;54;Merumatta Senggigi Lombok;Traveler ;09.06;05/02/19;5
+13;28;Lombok Astoria Mataram;Kamal Jumblatt ;10;18/02/19;4
+14;63;Coral Beach 2 Bungalow Lombok;Jefri Saputra ;08.04;09/04/16;3
+15;59;Puri Bunga Beach Cottage Lombok;Tjahjono Firdausi ;08.00;15/04/16;3
+16;3;Favehotel Langko;Adam Setiawan ;10;20/04/16;3
+17;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;Maria ;09.02;23/04/16;5
+18;23;Aruna Senggigi Resort ;Agus Sukmayadi ;07.03;25/04/16;4
+19;3;Favehotel Langko;Ando Ban ;08.04;03/05/16;3
+20;9;Idoop Hotel Lombok;Rudyanto Kemal  ;07.09;04/05/16;3
+21;3;Favehotel Langko;Larry Kurniawan ;08.04;06/05/16;3
+22;31;Lombok Raya Hotel;Vander Bairam  ;10;09/05/16;4
+23;38;Natya Hotel Gili Trawangan Lombok;Varian Hutamafarna ;09.05;11/05/16;3
+24;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;Syahrir ;07.06;22/05/16;5
+25;12;Holiday Resort Lombok;Budiati Agung Wiharyanto ;07.02;24/05/16;4
+26;38;Natya Hotel Gili Trawangan Lombok;Meidinda ;09.08;25/05/16;3
+27;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;Putu Jaya Sukarna ;08.08;31/05/16;5
+28;39;Golden Palace Hotel Lombok;Frengky Muloko ;09.04;14/06/16;4
+29;38;Natya Hotel Gili Trawangan Lombok;Priscilla ;07.08;07/07/16;3
+30;3;Favehotel Langko;Junfri ;07.04;10/07/16;3
+31;38;Natya Hotel Gili Trawangan Lombok;Julia ;09.09;10/07/16;3
+32;9;Idoop Hotel Lombok;Frengky ;08.02;19/07/16;3
+33;39;Golden Palace Hotel Lombok;Frengky ;08.07;19/07/16;4
+34;1;ASTON Inn Mataram;Arief Rachman ;10;22/07/16;3
+35;3;Favehotel Langko;Enam;08.04;29/07/16;3
+36;3;Favehotel Langko;Farida ;07.04;30/07/16;3
+37;21;M Hotel Lombok;Abdullah ;08.08;10/08/16;2
+38;32;Svarga Resort Lombok;Galuh ;09.02;10/08/16;4
+39;6;Lombok Plaza Hotel dan Convention Cakranegara;Muh. Sahrul Ali ;06.03;12/08/16;3
+40;1;ASTON Inn Mataram;M. Fahmy Fawaid ;07.09;18/08/16;3
+1;24;Katamaran Hotel dan Resort Lombok;Endah Puspitorini ;10;14/05/18;5
+2;39;Golden Palace Hotel Lombok;Endah Puspitorini ;10;14/05/18;4
+3;39;Golden Palace Hotel Lombok;Mayasari ;10;26/05/18;4
+4;39;Golden Palace Hotel Lombok;Mayasari ;10;26/05/18;4
+5;16;Grand Madani Hotel Syariah Lombok;Widyaningsih  ;09.06;31/05/18;3
+6;12;Holiday Resort Lombok;Saskara Putra ;08.08;05/06/18;4
+7;16;Grand Madani Hotel Syariah Lombok;Mumu Mujahid ;09.02;13/06/18;3
+8;36;Jayakarta Hotel Lombok;Sukandi ;10;17/06/18;4
+9;6;Lombok Plaza Hotel dan Convention Cakranegara;Yohana  ;09.06;18/06/18;3
+10;28;Lombok Astoria Mataram;Lalu Bayu ;10;19/06/18;4
+11;12;Holiday Resort Lombok;Ryu ;08.04;20/06/18;4
+12;17;Santika Mataram Lombok;Henny Susanti ;09.02;20/06/18;3
+13;28;Lombok Astoria Mataram;Agnes Calosa Sosiawan ;10;20/06/18;4
+14;7;Gili Khayangan Villas Lombok;Budiyanto ;07.06;22/06/18;3
+15;21;M Hotel Lombok;Palas ;10;30/01/18;2
+16;38;Natya Hotel Gili Trawangan Lombok;Siska Miranti ;08.08;04/02/18;3
+17;28;Lombok Astoria Mataram;Kristian ;10;06/02/18;4
+18;2;ASTON Sunset Beach Resort Gili Trawangan ;Risna Damayanti ;08.02;07/02/18;4
+19;23;Aruna Senggigi Resort ;Johannes Sitanggang ;10;07/02/18;4
+20;36;Jayakarta Hotel Lombok;Risna Damayanti ;08.00;07/02/18;4
+21;2;ASTON Sunset Beach Resort Gili Trawangan ;Roni ;04.09;08/02/18;4
+22;9;Idoop Hotel Lombok;Hengky ;06.00;09/02/18;3
+23;9;Idoop Hotel Lombok;Ryu ;09.06;09/02/18;3
+24;16;Grand Madani Hotel Syariah Lombok;Irwan ;09.08;09/02/18;3
+25;17;Santika Mataram Lombok;Mohamad Yunanda ;10;09/02/18;3
+26;17;Santika Mataram Lombok;Roni ;05.02;10/02/18;3
+27;38;Natya Hotel Gili Trawangan Lombok;Reza Adyatama ;08.04;11/02/18;3
+28;63;Coral Beach 2 Bungalow Lombok;Cecep Kurnia Suhayt ;07.06;11/02/18;3
+29;3;Favehotel Langko;Devialyandrisukmasamsuri ;07.08;12/02/18;3
+30;9;Idoop Hotel Lombok;Irwansyah ;08.04;13/02/18;3
+31;16;Grand Madani Hotel Syariah Lombok;Irma Permata ;08.08;13/02/18;3
+32;21;M Hotel Lombok;Muhammad Aufa ;05.02;13/02/18;2
+33;4;Gili Bagaz Cottages Lombok;Hari Purnomo ;07.06;14/02/18;2
+34;16;Grand Madani Hotel Syariah Lombok;Edwin Ardiansyah ;08.08;14/02/18;3
+35;24;Katamaran Hotel dan Resort Lombok;Budi ;06.04;16/02/18;5
+36;2;ASTON Sunset Beach Resort Gili Trawangan ;Mr Rif ;08.08;18/02/18;4
+37;6;Lombok Plaza Hotel dan Convention Cakranegara;R Andi Kusuma ;08.00;19/02/18;3
+38;28;Lombok Astoria Mataram;Debby Irawat ;09.00;19/02/18;4
+39;44;Marc Hotel Gili Trawangan Lombok;Rizky ;07.06;19/02/18;4
+40;59;Puri Bunga Beach Cottage Lombok;Kasianto ;09.01;19/02/18;3
+1;22;RedDoorz Jalan Pendidikan Mataram Lombok;Hamid ;10;06/10/21;2
+2;20;SAME Hotel Lombok;Supratman Zakir ;10;13/11/21;2
+3;20;SAME Hotel Lombok;Nama Kontak ;08.04;27/11/21;2
+4;20;SAME Hotel Lombok;Ageng Rizky Setyawan ;10;28/11/21;2
+5;50;Krisna Bungalow and Restaurant Lombok;Om Stevan ;06.08;29/01/22;1
+6;2;ASTON Sunset Beach Resort Gili Trawangan ;Tamara Puspita ;09.06;14/02/22;4
+7;19;RedDoorz Syariah near Lombok Epicentrum Mall;Munif Prawira Yudha ;07.02;21/02/22;2
+8;20;SAME Hotel Lombok;Satriyanto ;07.02;02/03/22;2
+9;49;Nirvana Gili Sudak Resort Lombok;P;02.00;20/03/22;1
+10;17;Santika Mataram Lombok;Triandono Sutanto ;09.06;22/03/22;3
+11;34;Batatu Villa Lombok;Ega Novian ;10;26/03/22;4
+12;2;ASTON Sunset Beach Resort Gili Trawangan ;Reza ;10;27/03/22;4
+13;66;Pondok Santi Estate Lombok;MS;09.02;23/04/22;4
+14;3;Favehotel Langko;Dodik Hendro Wibisono ;08.00;26/04/22;3
+15;61;Sari Gili Bungalow Lombok;IA;10;07/05/22;4
+16;51;Segara Anak Lombok;AN;08.04;10/05/22;3
+17;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Agus Setiawan ;04.00;06/06/22;5
+18;58;Hotel Lumi Gili Trawangan Lombok;Murniati Ali ;09.02;12/06/22;4
+19;17;Santika Mataram Lombok;Dahrios Sugih Arto ;08.08;15/06/22;3
+20;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Imron Fadilah ;09.06;05/07/22;3
+21;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;CR;09.06;16/08/22;5
+22;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Puti Febrina ;06.08;28/09/22;5
+23;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Andi Selvy Batariani ;09.06;28/09/22;5
+24;13;Lombok Garden Hotel Lombok;EK;08.08;02/10/22;3
+25;30;Origin Lombok;Oktavianus Andy Gafur ;08.08;15/11/22;4
+26;13;Lombok Garden Hotel Lombok;Muhamad Taisir ;10;19/12/22;3
+27;13;Lombok Garden Hotel Lombok;Arifin ;08.08;19/12/22;3
+28;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;AA;07.02;23/12/22;3
+29;3;Favehotel Langko;Abed Adiseputro ;08.00;26/12/22;3
+30;47;Hotel Zaitun Selaparang Lombok;Jamhur Husain ;09.02;03/01/20;1
+31;2;ASTON Sunset Beach Resort Gili Trawangan ;Muhammad Adib ;07.06;05/01/20;4
+32;3;Favehotel Langko;Muhammad Adib ;07.02;05/01/20;3
+33;28;Lombok Astoria Mataram;Rita Novitasari S ;08.00;06/01/20;4
+34;49;Nirvana Gili Sudak Resort Lombok;Edy Sumardiyanto ;08.08;06/01/20;1
+35;27;Citilike Hotel Lombok;Uray Rika Damayanti ;07.06;09/01/20;3
+36;62;Intan Inn Hostel Lombok;Kadek Ayu Santika ;08.08;09/01/20;1
+37;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Ari Kusdinar ;10;24/01/20;5
+38;59;Puri Bunga Beach Cottage Lombok;Uluwul Himmah ;04.00;25/01/20;3
+39;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Cempaka Kesumaningtyas ;07.02;28/01/20;5
+40;20;SAME Hotel Lombok;Yulius Yulianto ;10;05/02/20;2
+1;1;ASTON Inn Mataram;Ainuddin ;10;30/03/17;3
+2;38;Natya Hotel Gili Trawangan Lombok;Mimi Marshella ;07.08;01/04/17;3
+3;56;Joje Bungalow Lombok;Firdy ;08.00;02/04/17;2
+4;32;Svarga Resort Lombok;Didik Harmoko ;06.00;10/04/17;4
+5;28;Lombok Astoria Mataram;Ahmad Fikry Ismail ;09.04;11/04/17;4
+6;28;Lombok Astoria Mataram;Sugie Prijatna ;10;14/04/17;4
+7;1;ASTON Inn Mataram;Iwan Setiawan ;02.04;20/04/17;3
+8;28;Lombok Astoria Mataram;Andrean Yohanes ;10;21/04/17;4
+9;23;Aruna Senggigi Resort ;Nicha O ;07.05;25/04/17;4
+10;50;Krisna Bungalow and Restaurant Lombok;I Wayan Sidi Artha ;10;27/04/17;1
+11;3;Favehotel Langko;Inge Meani ;09.04;04/07/17;3
+12;26;Hotel Palapa Mataram;Abdullah ;08.08;04/07/17;1
+13;32;Svarga Resort Lombok;Lina ;09.02;04/07/17;4
+14;28;Lombok Astoria Mataram;Mardia Nurfaida ;10;08/07/17;4
+15;1;ASTON Inn Mataram;Gilang Aditya ;09.07;10/07/17;3
+16;3;Favehotel Langko;Aprita Damayanti ;10;10/07/17;3
+17;25;Kebun Villas and Resort Lombok;Mei Indrayani ;08.08;12/07/17;4
+18;36;Jayakarta Hotel Lombok;Andini C. Sadikin ;09.02;14/07/17;4
+19;1;ASTON Inn Mataram;Trisna Ayu ;10;17/07/17;3
+20;23;Aruna Senggigi Resort ;Darmawati ;08.04;20/07/17;4
+21;28;Lombok Astoria Mataram;Kris Kanti ;09.07;20/07/17;4
+22;36;Jayakarta Hotel Lombok;Kemal ;07.02;24/07/17;4
+23;3;Favehotel Langko;Jennifer T ;08.02;25/07/17;3
+24;21;M Hotel Lombok;Heni  ;06.01;27/07/17;2
+25;36;Jayakarta Hotel Lombok;Wirya ;08.00;27/07/17;4
+26;1;ASTON Inn Mataram;Aldy ;07.05;29/07/17;3
+27;23;Aruna Senggigi Resort ;Septi ;06.04;01/08/17;4
+28;21;M Hotel Lombok;Riza Prapascatama ;07.04;04/08/17;2
+29;3;Favehotel Langko;Henry ;09.08;07/08/17;3
+30;28;Lombok Astoria Mataram;Gede Putra ;09.07;09/08/17;4
+31;64;Nutana Hotel Lombok;Mochamad Firas ;06.00;11/08/17;3
+32;28;Lombok Astoria Mataram;Tifani Nur Yuniarti ;09.08;15/08/17;4
+33;36;Jayakarta Hotel Lombok;Adimas Dwijanyardy ;08.00;15/08/17;4
+34;52;DeKa Homestay Mataram;Andes Azis Dusila ;10;15/08/17;2
+35;52;DeKa Homestay Mataram;Adhistyra W ;09.03;15/08/17;2
+36;24;Katamaran Hotel dan Resort Lombok;Yulgea Della Amalia ;09.06;17/08/17;5
+37;52;DeKa Homestay Mataram;Surya Syafei ;06.04;26/08/17;2
+38;53;Bleu Verde hotel Turtle Point Beach Lombok;Adhistyra W ;09.04;26/08/17;3
+39;2;ASTON Sunset Beach Resort Gili Trawangan ;Lina ;07.03;01/09/17;4
+40;9;Idoop Hotel Lombok;Maya Quartermaine ;10;03/09/17;3
+1;17;Santika Mataram Lombok;Darmanto ;09.02;07/10/19;3
+2;24;Katamaran Hotel dan Resort Lombok;Ingrid ;10;07/10/19;5
+3;10;RedDoorz near Mataram University Lombok;Ovie Sofia ;10;08/10/19;2
+4;3;Favehotel Langko;Darmanto ;08.04;09/10/19;3
+5;54;Merumatta Senggigi Lombok;Syafrudin ;08.08;29/12/19;5
+6;31;Lombok Raya Hotel;Edi Rosadi  ;09.02;30/12/19;4
+7;10;RedDoorz near Mataram University Lombok;Syamsul Hadi ;10;12/10/19;2
+8;33;Montana Premier Senggigi Lombok;Angga Rini ;10;14/10/19;4
+9;49;Nirvana Gili Sudak Resort Lombok;Indah Nuer Sistyaningsih ;09.02;16/10/19;1
+10;10;RedDoorz near Mataram University Lombok;Lahudin ;06.04;19/10/19;2
+11;2;ASTON Sunset Beach Resort Gili Trawangan ;Astri Yulia ;09.06;22/10/19;4
+12;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Samira Tasyaa ;10;22/10/19;3
+13;6;Lombok Plaza Hotel dan Convention Cakranegara;Novike ;08.09;22/10/19;3
+14;2;ASTON Sunset Beach Resort Gili Trawangan ;Yanti Arianti ;10;24/10/19;4
+15;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Niken W ;08.04;25/10/19;3
+16;10;RedDoorz near Mataram University Lombok;Umi Roicha ;10;25/10/19;2
+17;38;Natya Hotel Gili Trawangan Lombok;Aluh Irma Suryaning ;10;31/10/19;3
+18;2;ASTON Sunset Beach Resort Gili Trawangan ;Suryana ;10;05/11/19;4
+19;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Niken W ;09.02;06/11/19;3
+20;62;Intan Inn Hostel Lombok;Chandra Aditiya Darmawan ;08.00;06/11/19;1
+21;5;Sunwood Arianz Hotel Managed by BENCOOLEN Lombok;Winda Siti Juliani ;08.00;09/11/19;3
+22;24;Katamaran Hotel dan Resort Lombok;Stephanie Wibowo ;10;09/11/19;5
+23;38;Natya Hotel Gili Trawangan Lombok;Winda Siti Juliani ;10;09/11/19;3
+24;10;RedDoorz near Mataram University Lombok;Daniel Januar Prakarsa Haranita Siahaan ;10;12/11/19;2
+25;10;RedDoorz near Mataram University Lombok;Daniel Januar Prakarsa Haranita Siahaan ;10;12/11/19;2
+26;2;ASTON Sunset Beach Resort Gili Trawangan ;Trianto Pramudhia ;10;15/11/19;4
+27;2;ASTON Sunset Beach Resort Gili Trawangan ;Erwin Dwi Laksana ;10;15/11/19;4
+28;28;Lombok Astoria Mataram;I Made Findyck Wirawan ;07.02;15/11/19;4
+29;62;Intan Inn Hostel Lombok;Agus Santoso ;05.06;15/11/19;1
+30;10;RedDoorz near Mataram University Lombok;Rina Septhy Widiyanti ;09.02;16/11/19;2
+31;57;Pratama Hotel and Convention Lombok;Reagan Gunawan ;08.04;16/11/19;3
+32;59;Puri Bunga Beach Cottage Lombok;Palupi Pangestiningtyas ;09.03;16/11/19;3
+33;64;Nutana Hotel Lombok;Nurul Wathan ;10;18/11/19;3
+34;10;RedDoorz near Mataram University Lombok;Andy Waumans ;10;21/11/19;2
+35;13;Lombok Garden Hotel Lombok;N Dewi Andayani ;08.08;21/11/19;3
+36;13;Lombok Garden Hotel Lombok;PS;05.06;21/11/19;3
+37;35;Hastina Hotel Lombok;Bq. Erma Hapsari ;10;05/12/19;
+38;64;Nutana Hotel Lombok;Syamsuryati ;07.06;06/12/19;3
+39;27;Citilike Hotel Lombok;Muslimah ;08.08;12/12/19;3
+40;9;Idoop Hotel Lombok;Nofri Anggi ;06.00;13/12/19;3
+1;31;Lombok Raya Hotel;M Reval Aji P ;09.02;11/01/18;4
+2;28;Lombok Astoria Mataram;Suryadi Tanaya ;10;13/01/18;4
+3;39;Golden Palace Hotel Lombok;Irene Herdianto ;10;13/01/18;4
+4;1;ASTON Inn Mataram;Galfany Arian ;10;17/01/18;3
+5;3;Favehotel Langko;Dewi ;09.04;17/01/18;3
+6;28;Lombok Astoria Mataram;Daniel  ;09.03;18/01/18;4
+7;1;ASTON Inn Mataram;Sandra ;09.02;19/01/18;3
+8;3;Favehotel Langko;Ari Prayitno ;09.06;20/01/18;3
+9;13;Lombok Garden Hotel Lombok;Nuzuan Apriatama ;06.08;20/01/18;3
+10;38;Natya Hotel Gili Trawangan Lombok;Micko ;10;24/01/18;3
+11;39;Golden Palace Hotel Lombok;Astuti ;09.00;24/01/18;4
+12;36;Jayakarta Hotel Lombok;Suwantri Gani ;09.02;25/01/18;4
+13;21;M Hotel Lombok;I Ketut Sudiatmika ;10;29/01/18;2
+14;13;Lombok Garden Hotel Lombok;Allia Thursina ;10;30/01/18;3
+15;6;Lombok Plaza Hotel dan Convention Cakranegara;Yumnan Sabrie ;08.08;15/03/18;3
+16;44;Marc Hotel Gili Trawangan Lombok;Raja Josua Zakaria ;09.02;19/03/18;4
+17;31;Lombok Raya Hotel;Putri ;07.06;21/03/18;4
+18;39;Golden Palace Hotel Lombok;Alina Herlina ;08.08;22/03/18;4
+19;1;ASTON Inn Mataram;Hendra ;09.03;25/03/18;3
+20;1;ASTON Inn Mataram;Ketut Kusuma ;10;25/03/18;3
+21;39;Golden Palace Hotel Lombok;Yolanda Pragita ;10;27/03/18;4
+22;9;Idoop Hotel Lombok;Chant Christo ;04.00;28/03/18;3
+23;64;Nutana Hotel Lombok;Daniel Korompis ;08.04;30/03/18;3
+24;21;M Hotel Lombok;Roy  ;06.08;31/03/18;2
+25;53;Bleu Verde hotel Turtle Point Beach Lombok;Fredricka Emma  ;09.02;01/04/18;3
+26;39;Golden Palace Hotel Lombok;Ristya Ayu Mahendrasti ;10;05/04/18;4
+27;3;Favehotel Langko;Yuswanto Muji ;09.08;16/04/18;3
+28;54;Merumatta Senggigi Lombok;David Aryson ;08.08;16/04/18;5
+29;31;Lombok Raya Hotel;Gabby Kharismatika ;05.06;19/04/18;4
+30;3;Favehotel Langko;Hera Subagyo ;10;25/04/18;3
+31;59;Puri Bunga Beach Cottage Lombok;Adi Prabowo ;09.02;25/04/18;3
+32;16;Grand Madani Hotel Syariah Lombok;Andi Selvy Batariani ;08.00;26/04/18;3
+33;21;M Hotel Lombok;Samuel Jonatan ;08.00;27/04/18;2
+34;3;Favehotel Langko;Dahrios ;08.01;28/04/18;3
+35;17;Santika Mataram Lombok;Diana Delinda ;08.00;07/05/18;3
+36;32;Svarga Resort Lombok;Diana D ;07.02;07/05/18;4
+37;53;Bleu Verde hotel Turtle Point Beach Lombok;Diana ;09.06;07/05/18;3
+38;16;Grand Madani Hotel Syariah Lombok;Yusep Iskandar  ;02.00;09/05/18;3
+39;23;Aruna Senggigi Resort ;Azka Silmi ;08.00;10/05/18;4
+40;15;Central Inn Senggigi Lombok;Yacobus Kunharibowo ;02.08;14/05/18;3
+1;3;Favehotel Langko;Indra Gunawan ;06.02;15/10/15;3
+2;3;Favehotel Langko;Dewi ;10;17/10/15;3
+3;13;Lombok Garden Hotel Lombok;Iwan ;05.07;19/10/15;3
+4;39;Golden Palace Hotel Lombok;Jabar ;08.02;19/10/15;4
+5;23;Aruna Senggigi Resort ;Arya ;05.05;20/10/15;4
+6;3;Favehotel Langko;Liana ;09.01;04/11/15;3
+7;3;Favehotel Langko;Meta Tania ;09.07;18/11/15;3
+8;9;Idoop Hotel Lombok;Indra Gunawan ;06.04;23/11/15;3
+9;2;ASTON Sunset Beach Resort Gili Trawangan ;Handi ;10;30/11/15;4
+10;2;ASTON Sunset Beach Resort Gili Trawangan ;Susis ;10;07/12/15;4
+11;23;Aruna Senggigi Resort ;Mawar ;05.00;08/12/15;4
+12;3;Favehotel Langko;Indra Gunawan ;07.02;09/12/15;3
+13;9;Idoop Hotel Lombok;Dewi Retno Lestari ;09.01;22/12/15;3
+14;3;Favehotel Langko;Venny ;08.03;27/12/15;3
+15;13;Lombok Garden Hotel Lombok;Deva Resi Aprillinita ;05.05;29/12/15;3
+16;13;Lombok Garden Hotel Lombok;Thareq Barasabha ;06.07;29/12/15;3
+17;3;Favehotel Langko;Justinus Iwan Sutanto ;10;31/12/15;3
+18;19;RedDoorz Syariah near Lombok Epicentrum Mall;Slamet Ryanto ;10;03/03/21;2
+19;30;Origin Lombok;Arindya Rohmatul Ummah ;10;08/03/21;4
+20;19;RedDoorz Syariah near Lombok Epicentrum Mall;Christina Desry Dwi Nugraheni ;10;16/03/21;2
+21;12;Holiday Resort Lombok;Ahmad Rohadi ;09.02;17/03/21;4
+22;10;RedDoorz near Mataram University Lombok;So Far So Good ;10;24/03/21;2
+23;22;RedDoorz Jalan Pendidikan Mataram Lombok;Dewi ;10;28/03/21;2
+24;22;RedDoorz Jalan Pendidikan Mataram Lombok;Dewi Dewi ;10;30/03/21;2
+25;35;Hastina Hotel Lombok;Randi Darmansyah ;08.08;03/04/21;
+26;43;Puri Rinjani Bungalows Lombok;Reny Syahruni ;08.04;14/04/21;3
+27;19;RedDoorz Syariah near Lombok Epicentrum Mall;Dayu Winda Kirana Pidada ;10;17/04/21;2
+28;30;Origin Lombok;Danang Susila ;08.00;16/05/21;4
+29;54;Merumatta Senggigi Lombok;Rahardi Arimbawa ;10;22/05/21;5
+30;43;Puri Rinjani Bungalows Lombok;Joyce Judhistirawati H ;10;30/05/21;3
+31;65;Cozy Cottages Lombok;Henny Indrayana ;08.04;30/05/21;3
+32;2;ASTON Sunset Beach Resort Gili Trawangan ;Henny Indrayana ;08.08;04/06/21;4
+33;2;ASTON Sunset Beach Resort Gili Trawangan ;Ahmad Azzam Fuadie ;10;15/06/21;4
+34;54;Merumatta Senggigi Lombok;Gatot Ismail ;08.00;16/06/21;5
+35;30;Origin Lombok;Arie Septhi Irdianty ;09.06;18/06/21;4
+36;38;Natya Hotel Gili Trawangan Lombok;Putu Andika Kusuma ;09.06;22/06/21;3
+37;38;Natya Hotel Gili Trawangan Lombok;Elisabet Dian ;09.06;22/06/21;3
+38;22;RedDoorz Jalan Pendidikan Mataram Lombok;Edotel Pendidikan ;10;02/07/21;2
+39;22;RedDoorz Jalan Pendidikan Mataram Lombok;Nadia Mulyani Selian ;10;08/07/21;2
+40;22;RedDoorz Jalan Pendidikan Mataram Lombok;Muzain Abidin ;07.06;04/10/21;2
+1;36;Jayakarta Hotel Lombok;Sondang ;07.00;01/07/17;4
+2;28;Lombok Astoria Mataram;Fonny Chandra ;07.04;02/07/17;4
+3;28;Lombok Astoria Mataram;Dias ;08.08;02/07/17;4
+4;1;ASTON Inn Mataram;Dian Puspa ;09.06;03/07/17;3
+5;9;Idoop Hotel Lombok;Alvi ;09.02;03/07/17;3
+6;64;Nutana Hotel Lombok;Kasianto ;10;03/07/17;3
+7;1;ASTON Inn Mataram;Wawan ;07.09;04/07/17;3
+8;3;Favehotel Langko;Ibrahim ;09.00;04/07/17;3
+9;21;M Hotel Lombok;Gian Ramadhan ;09.03;02/01/17;2
+10;31;Lombok Raya Hotel;Dega ;10;02/01/17;4
+11;54;Merumatta Senggigi Lombok;Sintikhe ;09.03;03/01/17;5
+12;3;Favehotel Langko;Donny ;09.01;04/01/17;3
+13;17;Santika Mataram Lombok;Mia ;08.01;04/01/17;3
+14;31;Lombok Raya Hotel;Soeprihat Anwar ;09.08;04/01/17;4
+15;3;Favehotel Langko;Anton K. ;09.00;05/01/17;3
+16;3;Favehotel Langko;Muhammad Aufa ;10;06/01/17;3
+17;17;Santika Mataram Lombok;Stella ;07.09;13/01/17;3
+18;28;Lombok Astoria Mataram;Dr. Supriatno Ph.d ;08.01;16/01/17;4
+19;3;Favehotel Langko;Gagah ;09.03;23/01/17;3
+20;3;Favehotel Langko;Fidal ;08.07;26/01/17;3
+21;13;Lombok Garden Hotel Lombok;Lissaf Fatmasari ;09.06;26/01/17;3
+22;2;ASTON Sunset Beach Resort Gili Trawangan ;Melisa ;09.00;27/09/17;4
+23;4;Gili Bagaz Cottages Lombok;Darmawansyah ;10;10/10/17;2
+24;3;Favehotel Langko;Fakhrur Rosyad ;06.04;12/10/17;3
+25;1;ASTON Inn Mataram;Nabhan  ;09.00;17/10/17;3
+26;17;Santika Mataram Lombok;Anna Maulidiana ;09.00;18/10/17;3
+27;9;Idoop Hotel Lombok;Rosdiyanti ;08.00;19/10/17;3
+28;15;Central Inn Senggigi Lombok;Monica Angeline Sudarsono ;08.04;22/10/17;3
+29;2;ASTON Sunset Beach Resort Gili Trawangan ;Bayu Sutantri ;08.01;25/10/17;4
+30;16;Grand Madani Hotel Syariah Lombok;Rahma ;09.04;29/10/17;3
+31;54;Merumatta Senggigi Lombok;Adhistyra W ;08.04;29/10/17;5
+32;39;Golden Palace Hotel Lombok;Dadi Darmadi ;10;31/10/17;4
+33;31;Lombok Raya Hotel;Muhlis ;08.00;16/11/17;4
+34;31;Lombok Raya Hotel;Alif Shirot Sasmita ;06.05;16/11/17;4
+35;17;Santika Mataram Lombok;Johannes Sitanggang ;09.02;17/11/17;3
+36;39;Golden Palace Hotel Lombok;Nona Anan The ;10;17/11/17;4
+1;6;Lombok Plaza Hotel dan Convention Cakranegara;Monard Shaula Mate ;08.06;24/08/16;3
+2;1;ASTON Inn Mataram;Moh Harsono ;07.02;27/08/16;3
+3;21;M Hotel Lombok;B3l ;07.06;08/09/16;2
+4;1;ASTON Inn Mataram;Muhammad Heri Triprasetia ;08.01;10/09/16;3
+5;3;Favehotel Langko;Cucun Kartini ;06.04;13/09/16;3
+6;1;ASTON Inn Mataram;Sri Handriyati ;07.07;19/09/16;3
+7;21;M Hotel Lombok;Kurniawan ;04.04;24/09/16;2
+8;3;Favehotel Langko;Ali Faisal ;08.08;25/09/16;3
+9;32;Svarga Resort Lombok;Dhidit ;05.08;26/09/16;4
+10;1;ASTON Inn Mataram;Daniel H.p. Panggabean ;04.06;27/09/16;3
+11;23;Aruna Senggigi Resort ;Awan ;08.04;03/10/16;4
+12;38;Natya Hotel Gili Trawangan Lombok;Billy Sutanto  ;07.04;09/10/16;3
+13;39;Golden Palace Hotel Lombok;Kurnia ;07.04;09/10/16;4
+14;3;Favehotel Langko;Triono Suprianto ;08.00;02/01/16;3
+15;3;Favehotel Langko;Abi Putra ;08.03;02/01/16;3
+16;3;Favehotel Langko;Tusi ;05.08;03/01/16;3
+17;3;Favehotel Langko;Deni ;09.05;16/01/16;3
+18;3;Favehotel Langko;Jeffry ;09.03;22/01/16;3
+19;3;Favehotel Langko;Gusti Putu Surata ;10;01/02/16;3
+20;40;Jambuluwuk Oceano Gili Trawangan Resort Lombok;M H Fuady ;05.06;02/02/16;5
+21;3;Favehotel Langko;Johannes Daniel L ;06.03;12/02/16;3
+22;59;Puri Bunga Beach Cottage Lombok;Muhammad Abduh ;09.02;13/02/16;3
+23;32;Svarga Resort Lombok;Bayu ;08.04;15/02/16;4
+24;9;Idoop Hotel Lombok;Akim ;07.09;17/02/16;3
+25;9;Idoop Hotel Lombok;Hana ;08.04;26/02/16;3
+26;3;Favehotel Langko;Johannes Daniel Lelet, ;05.08;04/03/16;3
+27;63;Coral Beach 2 Bungalow Lombok;Prasetyo Winoto ;08.00;11/03/16;3
+28;64;Nutana Hotel Lombok;Kris ;07.05;11/03/16;3
+29;8;Jeeva Klui Resort Lombok;Budi ;08.08;16/03/16;4
+30;31;Lombok Raya Hotel;Eko Marsono ;08.04;27/03/16;4
+31;2;ASTON Sunset Beach Resort Gili Trawangan ;Novike ;09.02;29/03/16;4
+32;1;ASTON Inn Mataram;Fatma Nadja Baity ;09.08;18/10/16;3
+33;1;ASTON Inn Mataram;Andy ;08.08;18/10/16;3
+34;21;M Hotel Lombok;Barcelona ;08.04;18/10/16;2
+35;13;Lombok Garden Hotel Lombok;Andini ;10;27/10/16;3
+36;21;M Hotel Lombok;Dony Aditya  ;07.06;31/10/16;2
+1;64;Nutana Hotel Lombok;Abdul Kadir ;10;19/02/18;3
+2;59;Puri Bunga Beach Cottage Lombok;Djoem ;09.02;20/02/18;3
+3;59;Puri Bunga Beach Cottage Lombok;IA;08.01;20/02/18;3
+4;39;Golden Palace Hotel Lombok;Chintia ;05.02;22/02/18;4
+5;26;Hotel Palapa Mataram;Dede Kurniawan ;08.00;23/02/18;1
+6;7;Gili Khayangan Villas Lombok;Ervi ;08.08;26/02/18;3
+7;1;ASTON Inn Mataram;Nurtamymy ;08.06;27/02/18;3
+8;1;ASTON Inn Mataram;Varina ;08.04;05/03/18;3
+9;44;Marc Hotel Gili Trawangan Lombok;Riri ;10;07/03/18;4
+10;38;Natya Hotel Gili Trawangan Lombok;Fajar Rizkiawan ;08.08;10/03/18;3
+11;2;ASTON Sunset Beach Resort Gili Trawangan ;Joko Mulyadi  ;10;13/03/18;4
+12;59;Puri Bunga Beach Cottage Lombok;Cia ;05.02;14/03/18;3
+13;28;Lombok Astoria Mataram;Dita ;09.06;22/06/18;4
+14;36;Jayakarta Hotel Lombok;Geristian Erlangga Barnas ;09.06;22/06/18;4
+15;13;Lombok Garden Hotel Lombok;Rifki Yahya ;10;24/06/18;3
+16;60;Panda Hostel Lombok;Hanayanti ;08.00;24/06/18;3
+17;9;Idoop Hotel Lombok;Hilda ;08.00;28/06/18;3
+18;54;Merumatta Senggigi Lombok;Irene Jessica ;10;28/06/18;5
+19;23;Aruna Senggigi Resort ;Pamungkas ;09.06;01/07/18;4
+20;42;Melati Cottage Lombok;Irenne Pramudita ;08.00;02/07/18;
+21;44;Marc Hotel Gili Trawangan Lombok;Deny ;08.00;02/07/18;4
+22;31;Lombok Raya Hotel;Zummy Hanifah ;10;09/07/18;4
+23;13;Lombok Garden Hotel Lombok;Mephy Kr ;08.00;10/07/18;3
+24;23;Aruna Senggigi Resort ;Andreas Satria ;10;10/07/18;4
+25;28;Lombok Astoria Mataram;Faisal Rizani ;08.08;14/07/18;4
+26;21;M Hotel Lombok;Fieramuji ;09.02;16/07/18;2
+27;3;Favehotel Langko;Jimmy Effendy ;10;20/07/18;3
+28;13;Lombok Garden Hotel Lombok;Suryaningtiwi Ramadani ;09.02;01/08/18;3
+29;13;Lombok Garden Hotel Lombok;Ni Wayan Arie Widyasari ;06.09;01/08/18;3
+30;50;Krisna Bungalow and Restaurant Lombok;Ferdian Anggriani ;08.00;13/08/18;1
+31;50;Krisna Bungalow and Restaurant Lombok;Faridaniz Utami Ningsih ;09.02;02/09/18;1
+32;3;Favehotel Langko;Mulyadi Hanafi ;08.00;12/09/18;3
+33;16;Grand Madani Hotel Syariah Lombok;M Kholili ;10;16/09/18;3
+34;35;Hastina Hotel Lombok;Wati ;08.04;17/09/18;
+35;35;Hastina Hotel Lombok;Wati ;08.08;11/10/18;
+36;3;Favehotel Langko;R Arief Munandar ;10;31/10/18;3
+37;3;Favehotel Langko;Ayuk Agusti ;07.06;17/11/18;3
+1;42;Melati Cottage Lombok;Irfan Budianto ;08.04;19/02/20;
+2;3;Favehotel Langko;Ventri Yunita ;08.08;20/02/20;3
+3;3;Favehotel Langko;Frida Nurbiatie ;10;26/02/20;3
+4;28;Lombok Astoria Mataram;Frida Nurbiatie ;09.06;26/02/20;4
+5;18;Amarsvati Luxury Resort Condotel dan Villas Malimbu Lombok;Ritwan Imanuel Tarigan ;09.06;27/03/20;5
+6;3;Favehotel Langko;M Abeto Harahap ;10;30/05/20;3
+7;3;Favehotel Langko;M Abeto Harahap ;08.08;12/06/20;3
+8;3;Favehotel Langko;Jeck Malelak ;10;28/07/20;3
+9;3;Favehotel Langko;Salindri Tri Kusuma Wardhani ;09.02;20/08/20;3
+10;3;Favehotel Langko;Mr Rif ;;20/08/20;3
+11;28;Lombok Astoria Mataram;Sukur Budi ;10;21/09/20;4
+12;3;Favehotel Langko;Amelia Dertta Irjayanti ;08.04;02/11/20;3
+13;20;SAME Hotel Lombok;Zulmandikari Wijaya ;10;03/11/20;2
+14;12;Holiday Resort Lombok;Rivana ;06.02;05/03/14;4
+15;12;Holiday Resort Lombok;Endah ;08.06;05/03/14;4
+16;12;Holiday Resort Lombok;Sari ;06.09;05/03/14;4
+17;23;Aruna Senggigi Resort ;Echa ;09.09;07/03/14;4
+18;23;Aruna Senggigi Resort ;Kahfi ;09.08;07/03/14;4
+19;23;Aruna Senggigi Resort ;Irene ;09.04;07/03/14;4
+20;36;Jayakarta Hotel Lombok;Brenda F ;07.04;20/03/14;4
+21;36;Jayakarta Hotel Lombok;Bunga M. ;06.04;20/03/14;4
+22;12;Holiday Resort Lombok;Arifin ;08.00;07/04/14;4
+23;12;Holiday Resort Lombok;Tomy Wicakana ;08.04;07/04/14;4
+24;12;Holiday Resort Lombok;Anida ;08.00;07/04/14;4
+25;12;Holiday Resort Lombok;Sania  ;07.07;07/04/14;4
+26;41;Puri Saron Senggigi Beach Resort Lombok;Wahyudi Ismail ;07.06;07/04/14;3
+27;41;Puri Saron Senggigi Beach Resort Lombok;Anwar Rifaldi ;08.04;07/04/14;3
+28;41;Puri Saron Senggigi Beach Resort Lombok;Kasidin Anwar ;08.08;07/04/14;3
+29;41;Puri Saron Senggigi Beach Resort Lombok;Kustino ;09.02;07/04/14;3
+30;36;Jayakarta Hotel Lombok;Mafira ;08.07;23/04/14;4
+31;41;Puri Saron Senggigi Beach Resort Lombok;Ariska ;08.04;23/04/14;3
+32;41;Puri Saron Senggigi Beach Resort Lombok;Laras Indriani ;08.08;02/05/14;3
+33;41;Puri Saron Senggigi Beach Resort Lombok;Hendrik Nainggolan ;08.08;02/05/14;3
+34;41;Puri Saron Senggigi Beach Resort Lombok;Fassel ;08.08;02/05/14;3
+35;36;Jayakarta Hotel Lombok;Aji Nugroho ;08.04;06/05/14;4
+36;31;Lombok Raya Hotel;Novita ;06.02;30/12/14;4
+37;22;RedDoorz Jalan Pendidikan Mataram Lombok;RK;05.06;01/01/23;2
+38;15;Central Inn Senggigi Lombok;PS;08.00;03/01/23;3
